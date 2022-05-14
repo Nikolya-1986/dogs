@@ -1,0 +1,24 @@
+<section class="menu menu__container">
+    <div class="menu__logo">
+        <a routerLink="">
+            <img 
+                [src]="logo" 
+                routerLink=""
+            >
+        </a>
+    </div>
+    <nav class="menu__navigation">
+        <ul>
+            <li>
+                <a 
+                    *ngFor="let item of menuItems; trackBy: trackByFn"
+                    [routerLink]="[item.path]"
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact:true}"
+                    >
+                    {{ item.name }}
+                </a>
+            </li>
+        </ul>
+    </nav>
+</section>

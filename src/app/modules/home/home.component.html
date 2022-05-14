@@ -1,0 +1,15 @@
+<section class="home home__container">
+    <header class="content">
+        <app-header-menu
+            [menuItems]="menuItems"
+            [logo]="logo"
+            >
+        </app-header-menu>
+    </header>
+    <main class="content">
+        <router-outlet></router-outlet> 
+    </main>
+    <footer class="content">
+        <app-footer></app-footer>
+    </footer>
+</section>
