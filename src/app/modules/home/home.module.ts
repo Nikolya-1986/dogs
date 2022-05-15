@@ -5,9 +5,9 @@ import { RouterModule } from '@angular/router';
 
 import { MenuService } from '../../services/menu.service';
 import { HomeComponent } from './home.component';
-import { HeaderMenuComponent } from './header-menu/header-menu.component';
-import { ErrorComponent } from './error/error.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
+import { ErrorComponent } from './components/error/error.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   imports: [

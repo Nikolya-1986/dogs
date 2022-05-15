@@ -6,6 +6,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DogsRoutingModule } from './dogs-routing.module';
 import { DogsListComponent } from './components/dogs-list/dogs-list.component';
 import { DogsItemComponent } from './components/dogs-item/dogs-item.component';
+import { DogsCardComponent } from './components/dogs-card/dogs-card.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { DogsItemComponent } from './components/dogs-item/dogs-item.component';
     DogsComponent,
     DogsListComponent,
     DogsItemComponent,
+    DogsCardComponent,
   ],
   imports: [
     CommonModule,

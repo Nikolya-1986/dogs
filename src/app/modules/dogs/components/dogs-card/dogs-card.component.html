@@ -1,0 +1,27 @@
+<section class="card card__container">
+  <div class="card__header">
+    <img 
+      [src]="dog.images[0]" 
+      class="card__image"
+    />
+  </div>
+  <div class="card__body">
+    <h3>
+      Dog breeds: {{ dog.breed }}
+    </h3>
+    <ul>
+      <li>
+        Life long: {{ dog.age }}
+      </li>
+      <li>
+        Size: {{ dog.size.body }}
+      </li>
+      <li>
+        Height: {{ dog.size.height }} centimeters at the withers
+      </li>
+      <li>
+        Weight: {{ dog.size.weight }} kilogram
+      </li>
+    </ul>
+  </div>
+</section>

@@ -1,1 +1,8 @@
-<p>dogs-list works!</p>
+<section class="dogs dogs__card">
+    <ng-container *ngFor="let dog of dogs$ | async; trackBy: trackByFn">
+        <app-dogs-card
+            [dog]="dog"
+            >
+        </app-dogs-card>
+    </ng-container>
+</section>

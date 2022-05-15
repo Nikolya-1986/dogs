@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input, OnInit } from '@angular/core';
 
-import { MenuItem } from '../../../interfaces/menu.interfsce';
+import { MenuItem } from '../../../../interfaces/menu.interfsce';
 
 @Component({
   selector: 'app-header-menu',
