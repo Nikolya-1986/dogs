@@ -1,10 +1,14 @@
 <section class="card card__container">
-  <div class="card__header">
-    <img 
+  <div 
+    class="card__header" 
+    (click)="rotate()"
+    >
+    <img [@rotatedState]='state' 
       [src]="dog.images[0]" 
       class="card__image"
     />
   </div>
+  
   <div class="card__body">
     <h3>
       Dog breeds: {{ dog.breed }}
