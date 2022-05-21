@@ -12,10 +12,13 @@ import { reducers, metaReducers } from './reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { HomeModule } from './modules/home/home.module';
+import { appReducer } from './store/app.state';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { CustomSerializer } from './store/router/custom-serializer';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,10 +26,11 @@ import { HomeModule } from './modules/home/home.module';
     AppRoutingModule,
     HttpClientModule,
     HomeModule,
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
+    StoreModule.forRoot(appReducer),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
+    StoreRouterConnectingModule.forRoot({
+      serializer: CustomSerializer,
+    }),
     EffectsModule.forRoot([]),
   ],
   providers: [],

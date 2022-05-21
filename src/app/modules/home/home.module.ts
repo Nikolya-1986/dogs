@@ -8,6 +8,7 @@ import { HomeComponent } from './home.component';
 import { HeaderMenuComponent } from './components/header-menu/header-menu.component';
 import { ErrorComponent } from './components/error/error.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderMenuComponent, 
     ErrorComponent, 
     FooterComponent,
+    LoadingSpinnerComponent,
   ],
   providers: [
     MenuService
