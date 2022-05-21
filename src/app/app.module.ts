@@ -15,6 +15,7 @@ import { HomeModule } from './modules/home/home.module';
 import { appReducer } from './store/app.state';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { CustomSerializer } from './store/router/custom-serializer';
+import { DogEffects } from './store/dog/dog.effects';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { CustomSerializer } from './store/router/custom-serializer';
     StoreRouterConnectingModule.forRoot({
       serializer: CustomSerializer,
     }),
-    EffectsModule.forRoot([]),
+    EffectsModule.forRoot([DogEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],

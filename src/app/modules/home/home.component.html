@@ -6,8 +6,17 @@
             >
         </app-header-menu>
     </header>
+    <app-loading-spinner *ngIf="isLoading$ | async"></app-loading-spinner>
     <main class="content">
-        <router-outlet></router-outlet> 
+        <ng-container *ngIf="errorMessage$ | async as message; else showContent">
+            <p style="color: red; text-align:center; text-transform: uppercase;">
+                Error from backend: {{ message }}
+            </p>
+        </ng-container>
+        <ng-template #showContent>
+            <router-outlet></router-outlet> 
+        </ng-template>
+        
     </main>
     <footer class="content">
         <app-footer></app-footer>

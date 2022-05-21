@@ -1,7 +1,7 @@
 import { Injectable, Injector } from "@angular/core";
 import { DogService } from "../dog.service";
 import { ErrorService } from "../error.service";
-import { catchError, Observable, retry } from "rxjs";
+import { catchError, delay, Observable, retry } from "rxjs";
 
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
@@ -37,6 +37,7 @@ export class FacadeService {
 
     public getDogs(): Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, LocationDTO>[]> {
         return this.dogService.getDogs().pipe(
+            delay(3500),
             retry(3),
             catchError(this.errorService.errorsBackend.bind(this)),
         )
