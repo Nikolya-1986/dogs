@@ -3,7 +3,7 @@ import { Observable, tap } from 'rxjs';
 
 import { CompetitionsDTO } from "../../../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../../../interfaces/breed-group.iterface";
-import { LocationDTO } from "../../../../interfaces/location.interface";
+import { DescriptionDTO } from "../../../../interfaces/description.interface";
 import { DogDTO } from "../../../../interfaces/dog.interface";
 import { DogStoreFacade } from '../../../../store/dog/dog.facade';
 
@@ -15,7 +15,7 @@ import { DogStoreFacade } from '../../../../store/dog/dog.facade';
 })
 export class DogsListComponent implements OnInit {
 
-  public dogs$!: Observable<DogDTO<CompetitionsDTO, LocationDTO, BreedGroupDTO>[]> | any;
+  public dogs$!: Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[]> | any;
 
   constructor(
     private _dogStoreFacade: DogStoreFacade,
@@ -26,7 +26,7 @@ export class DogsListComponent implements OnInit {
   };
 
   public trackByFn(ind: number, item: any): number {
-    console.log("Dogs id:", ind);
+    // console.log("Dogs id:", ind);
     return ind;
   };
 

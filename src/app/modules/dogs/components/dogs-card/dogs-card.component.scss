@@ -1,22 +1,19 @@
 .card {
+  
   width: 435px;
   margin: 5px;
   cursor: pointer;
-  border-radius: 0.35rem;
+  border-radius: 1.36rem;
   box-shadow: 0 20px 40px -14px rgba(0,0,0,0.25);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+
+  &__header-wrapper {
+    border-radius: 1.36rem 1.36rem 0 0;
+    overflow: hidden;
+  }
 
   &__header { 
-    filter: contrast(70%);
-    overflow: hidden;
-    position: relative;
-    transition: filter 0.5s cubic-bezier(.43,.41,.22,.91);
-
-    &:hover {
-      filter: contrast(100%);
-    }
 
     img {
       height: 350px;

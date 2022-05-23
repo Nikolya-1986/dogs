@@ -4,6 +4,7 @@
         {
             "id": "1fo3430-dfkl23-43fdgd",
             "breed": "Austrian hound",
+            "country": "Austria",
             "size": {
                 "body": "Average",
                 "weight": "15–22",
@@ -16,8 +17,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/brandl-bracke/brandl-bracke3.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/brandl-bracke/brandl-bracke5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/1sfsdf-dfg43g-fgkq0"
+            "description": {
+                "url": "http://localhost:3000/description/1sfsdf-dfg43g-fgkq0"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -31,6 +32,7 @@
         {
             "id": "2gfgfdg-ghjghj5fjs-hjfd[76",
             "breed": "Alabai",
+            "country": "Austria",
             "size": {
                 "body": "Large",
                 "weight": "40-80",
@@ -42,8 +44,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/alabay-ili-sredneaziatskaya-ovcharka/alabai_4.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/alabay-ili-sredneaziatskaya-ovcharka/alabai_5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/2dsf[pdf,-sdoqw[pvms"
+            "description": {
+                "url": "http://localhost:3000/description/2dsf[pdf,-sdoqw[pvms"
             },
             "competitions": [
                 "5sdfoppn-8kjdsfbsdk9",
@@ -57,6 +59,7 @@
         {
             "id": "3plhg[-sdjf]b.mfd-sdfzaq[",
             "breed": "Alpine Dachshund Hound",
+            "country": "Austria",
             "size": {
                 "body": "Average",
                 "weight": "15–18",
@@ -69,8 +72,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/alpine-dachsbracke/alpine-dachsbracke3.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/alpine-dachsbracke/alpine-dachsbracke4.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/3fghdf-lkfawz-[kjlls"
+            "description": {
+                "url": "http://localhost:3000/description/3fghdf-lkfawz-[kjlls"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -84,6 +87,7 @@
         {
             "id": "4dfp,sd-repksmd-34kg;fs3",
             "breed":"English bulldog",
+            "country": "United Kingdom",
             "size": {
                 "body": "Average",
                 "weight": "20–25",
@@ -95,8 +99,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/92/86/2a/92862a85431440fd8156b522b272fb18.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/7f/c3/ed/7fc3ed11ee0b46d2bb5e88e8e844f07e.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/4ghjsdfg-jkoi89-hvnhgjs"
+            "description": {
+                "url": "http://localhost:3000/description/4ghjsdfg-jkoi89-hvnhgjs"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -110,6 +114,7 @@
         {
             "id": "5gfhf-87hjkhdf-tdrewhgm65",
             "breed":"English mastiff",
+            "country": "United Kingdom",
             "size": {
                 "body": "Large",
                 "weight": "70–90",
@@ -121,8 +126,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/english-mastiff/english_mastiff_2.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/english-mastiff/english_mastiff_3.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/5gldflk-34l;dsf,g553"
+            "description": {
+                "url": "http://localhost:3000/description/5gldflk-34l;dsf,g553"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -138,6 +143,7 @@
         {
             "id": "6fghfhj-hgjghsf-fhjhfj",
             "breed":"English Springer Spaniel",
+            "country": "United Kingdom",
             "size": {
                 "body": "Average",
                 "weight": "20–25",
@@ -151,8 +157,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/english-springer-spaniel/english-springer-spaniel3.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/english-springer-spaniel/english-springer-spaniel4.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/6dghfg-65756df-76867"
+            "description": {
+                "url": "http://localhost:3000/description/6dghfg-65756df-76867"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -166,6 +172,7 @@
         {
             "id": "7fghf-7896df-fghf",
             "breed":"Appenzeller Sennenhund",
+            "country": "Switzerland",
             "size": {
                 "body": "Average",
                 "weight": "22–32",
@@ -194,6 +201,7 @@
         {
             "id": "8fdghgj-5ehgfgh05",
             "breed":"Agentino dog",
+            "country": "Argentina",
             "size": {
                 "body": "Average",
                 "weight": "22–32",
@@ -205,8 +213,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/dogo-argentino/dogo-argentino_2.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/dogo-argentino/dogo-argentino_1.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/8fghfgk,-43kdlfmg943"
+            "description": {
+                "url": "http://localhost:3000/description/8fghfgk,-43kdlfmg943"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -222,6 +230,7 @@
         {
             "id": "9dgfd-5645df76-gh",
             "breed":"Artesian-Norman Basset",
+            "country": "France",
             "size": {
                 "body": "Average",
                 "weight": "22–32",
@@ -233,8 +242,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/basset-artesien-normand/iStock-183280746.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/basset-artesien-normand/iStock-173035990.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/9gfhfgh-fjh4tfg-hj"
+            "description": {
+                "url": "http://localhost:3000/description/9gfhfgh-fjh4tfg-hj"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -250,6 +259,7 @@
         {
             "id": "10fhjf-ghgfh45hgjkh-gh",
             "breed":"Aussie",
+            "country": "USA",
             "size": {
                 "body": "Large",
                 "weight": "22–30",
@@ -262,8 +272,8 @@
                 "https://storage-api.petstory.ru/resize/0x0x70/af/13/80/af13808d294e48ffacaf1b5daf051b1b.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/be/49/1b/be491b301f6a4dc0a2edec3a107d8fb3.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/10cxvbcxbfd0-fg66"
+            "description": {
+                "url": "http://localhost:3000/description/10cxvbcxbfd0-fg66"
             },
             "competitions": [
                 "6sdklknn0-klmdjvdsjsd",
@@ -277,6 +287,7 @@
         {
             "id": "11fdg-gfh45fhjfgjd",
             "breed":"Bavarian mountain hound",
+            "country": "Germany",
             "size": {
                 "body": "Average",
                 "weight": "20–25",
@@ -288,8 +299,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/bavarian-mountain-hound/3.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/bavarian-mountain-hound/5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/11fgh-gfjfhz0"
+            "description": {
+                "url": "http://localhost:3000/description/11fgh-gfjfhz0"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -303,6 +314,7 @@
         {
             "id": "12dfgh-67fghgh-645gf",
             "breed":"Basset hound",
+            "country": "England",
             "size": {
                 "body": "Average",
                 "weight": "18–25",
@@ -317,8 +329,8 @@
                 "https://petstory.ru/resize/800x800x70/upload/images/articles/breeds/basset-hound/basset_4.jpg",
                 "https://petstory.ru/resize/800x800x70/upload/images/articles/breeds/basset-hound/basset_5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/12pfg-str467hgj"
+            "description": {
+                "url": "http://localhost:3000/description/12pfg-str467hgj"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -333,6 +345,7 @@
         {
             "id": "13fdgh-tfh9sefjk",
             "breed":"Belgian Shepherd",
+            "country": "Belgium",
             "size": {
                 "body": "Large",
                 "weight": "25–35",
@@ -344,8 +357,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/3d/9d/80/3d9d8083d43c47dd8452138d2396e4d4.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/f2/7e/94/f27e94c5962c40f1ad7060413726b7cd.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/13gfo-r32gffg"
+            "description": {
+                "url": "http://localhost:3000/description/13gfo-r32gffg"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -359,6 +372,7 @@
         {
             "id": "14fhghfj-fthfgh-56",
             "breed":"Belgian mastiff",
+            "country": "Belgium",
             "size": {
                 "body": "Large",
                 "weight": "35–60",
@@ -370,8 +384,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/34/0a/19/340a195666924220ad40f29183b27d28.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/ed/f2/04/edf204cbb77f4b2082bcdf1cc90e644a.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/14fghfg-thfdh87"
+            "description": {
+                "url": "http://localhost:3000/description/14fghfg-thfdh87"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -386,6 +400,7 @@
         {
             "id": "15fghfhj-ytryrt76s",
             "breed":"Bergamasco Shepherd",
+            "country": "Italy",
             "size": {
                 "body": "Large",
                 "weight": "26–38",
@@ -398,8 +413,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/cane-da-pastore-bergamasco/3.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/cane-da-pastore-bergamasco/4.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/15gjkhjk-rdtergg-g"
+            "description": {
+                "url": "http://localhost:3000/description/15gjkhjk-rdtergg-g"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -415,6 +430,7 @@
         {
             "id": "16ghgfh-eyt56kh0",
             "breed":"Bernese Mountain Dog",
+            "country": "Switzerland",
             "size": {
                 "body": "Large",
                 "weight": "35-50",
@@ -427,8 +443,8 @@
                 "https://storage-api.petstory.ru/resize/0x0x70/a7/8b/33/a78b337c58664839a0664afdd9f9d170.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/e4/ea/8f/e4ea8ffa97624a5c85e80278b75970ab.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/16dgh-df3245gfh987"
+            "description": {
+                "url": "http://localhost:3000/description/16dgh-df3245gfh987"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -444,6 +460,7 @@
         {
             "id": "17hjgf-gffgfgkj",
             "breed":"Beagle",
+            "country": "United Kingdom",
             "size": {
                 "body": "Average",
                 "weight": "10–15",
@@ -458,8 +475,8 @@
                 "https://storage-api.petstory.ru/resize/0x0x70/aa/1b/a9/aa1ba9b80f04456bb72a9e8d0d532d78.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/68/4d/18/684d1848aa494508b4e20e98dc6e2a8c.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/17-675fgh98ghgf0r"
+            "description": {
+                "url": "http://localhost:3000/description/17-675fgh98ghgf0r"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -476,6 +493,7 @@
         {
             "id": "18hjkh-dfgd65",
             "breed":"Welsh corgi",
+            "country": "United Kingdom",
             "size": {
                 "body": "Little",
                 "weight": "25,5–30",
@@ -487,8 +505,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/welsh-corgi/corgi_4.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/welsh-corgi/corgi_5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/18-fdg-etrfdgd86-y"
+            "description": {
+                "url": "http://localhost:3000/description/18-fdg-etrfdgd86-y"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -504,6 +522,7 @@
         {
             "id": "19fg-fdgdfg6-fg",
             "breed":"Pembroke Welsh Corgi",
+            "country": "Austria",
             "size": {
                 "body": "Little",
                 "weight": "25,5–30",
@@ -515,8 +534,8 @@
                 "https://petstory.ru/resize/800x800x80//upload/images/articles/breeds/welsh-corgi-pembroke/iStock-510783500.jpg",
                 "https://petstory.ru/resize/800x800x80//upload/images/articles/breeds/welsh-corgi-pembroke/iStock-1061333038.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/19jhkhj-dfg65kjgf"
+            "description": {
+                "url": "http://localhost:3000/description/19jhkhj-dfg65kjgf"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -532,6 +551,7 @@
         {
             "id": "20asooo[vns-45hgjgh",
             "breed":"Dutch shepherd",
+            "country": "Holland",
             "size": {
                 "body": "Large",
                 "weight": "23–32",
@@ -544,8 +564,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/hollandse-herder/3.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/hollandse-herder/5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/20jgkfd-ljkl;;kfg"
+            "description": {
+                "url": "http://localhost:3000/description/20jgkfd-ljkl;;kfg"
             },
             "competitions": [
                 "2pmndfk43-dg[zmhg;dt",
@@ -560,6 +580,7 @@
         {
             "id": "21ghfgh-dfgd65hj-f",
             "breed":"Jack Russell Terrier",
+            "country": "England",
             "size": {
                 "body": "Little",
                 "weight": "5–8",
@@ -572,8 +593,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/aa/fe/00/aafe00074a5f4e8392654a0f2d62038c.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/5e/be/f6/5ebef6363a2a438ebdc8fd6e24e0d44c.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/21dg-dfgdf87dfg"
+            "description": {
+                "url": "http://localhost:3000/description/21dg-dfgdf87dfg"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -587,6 +608,7 @@
         {
             "id": "22sdkl-dgsdfs43j;l",
             "breed":"Doberman",
+            "country": "Germany",
             "size": {
                 "body": "Large",
                 "weight": "30–40",
@@ -601,8 +623,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/1b/75/af/1b75afec74fa486e9d7481ed17502edd.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/71/84/bd/7184bde8c38245ada1a27efd42b85d88.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/21sdfg-879fd435"
+            "description": {
+                "url": "http://localhost:3000/description/21sdfg-879fd435"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -619,6 +641,7 @@
         {
             "id": "23sdgdfg-fdfd587kl",
             "breed":"Caucasian Shepherd Dog",
+            "country": "Austria",
             "size": {
                 "body": "Large",
                 "weight": "45–75",
@@ -631,8 +654,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/caucasian-shepherd-dog/caucasian_4.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/caucasian-shepherd-dog/caucasian_5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/23dsfs890fdg-dgg54"
+            "description": {
+                "url": "http://localhost:3000/description/23dsfs890fdg-dgg54"
             },
             "competitions": [
                 "3sdknew8-3ksn3qo-dd",
@@ -647,6 +670,7 @@
         {
             "id": "24kl;df8-45gfffgdf",
             "breed":"Labrador Retriever",
+            "country": "Canada",
             "size": {
                 "body": "Average",
                 "weight": "30–45",
@@ -661,8 +685,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/73/bd/81/73bd81d1925340b4afe3c6ee838c3ebb.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/68/4d/18/684d1848aa494508b4e20e98dc6e2a8c.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/24-fghfhg-rthfth65"
+            "description": {
+                "url": "http://localhost:3000/description/24-fghfhg-rthfth65"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -677,6 +701,7 @@
         {
             "id": "25a;hjkvb-rtfg43g",
             "breed":"Lhasa apso",
+            "country": "Tibet",
             "size": {
                 "body": "Little",
                 "weight": "6–7",
@@ -688,8 +713,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/lhasa-apso/lhasa_apso_2.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/lhasa-apso/lhasa_apso_3.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/25jlrdg-tdyrtysd-uy"
+            "description": {
+                "url": "http://localhost:3000/description/25jlrdg-tdyrtysd-uy"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -702,6 +727,7 @@
         {
             "id": "26asljhp08ghj-gffg",
             "breed":"Manchester Terrier",
+            "country": "United Kingdom",
             "size": {
                 "body": "Little",
                 "weight": "2,5–3,5",
@@ -713,8 +739,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/manchester-terrier/5.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/manchester-terrier/2.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/26fgh-hjkty65-tf"
+            "description": {
+                "url": "http://localhost:3000/description/26fgh-hjkty65-tf"
             },
             "competitions": [
                 "3sdknew8-3ksn3qo-dd",
@@ -729,6 +755,7 @@
         {
             "id": "27[uinbse-fd435",
             "breed":"Pug",
+            "country": "China",
             "size": {
                 "body": "Little",
                 "weight": "6,3–8,1",
@@ -741,8 +768,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/3c/f1/9b/3cf19ba5753444cfa7526a41e6f42087.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/3d/d5/4b/3dd54bba4c444ddb81b9057fef7c06a2.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/27iu467-ggf43-fghjf"
+            "description": {
+                "url": "http://localhost:3000/description/27iu467-ggf43-fghjf"
             },
             "competitions": [
                 "3sdknew8-3ksn3qo-dd",
@@ -755,6 +782,7 @@
         {
             "id": "28fgh-hjghj45-hlkhj",
             "breed":"German Shepherd",
+            "country": "Germany",
             "size": {
                 "body": "Large",
                 "weight": "25–40",
@@ -766,8 +794,8 @@
                 "https://storage-api.petstory.ru/resize/0x0x70/36/aa/19/36aa19a347da4392942a1b6dc95a33f9.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/41/eb/4d/41eb4d0846e54a71b36f92cef7a83a9c.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/28sgfdg-fgh56456"
+            "description": {
+                "url": "http://localhost:3000/description/28sgfdg-fgh56456"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -784,6 +812,7 @@
         {
             "id": "29dfh-43gfhfh8",
             "breed":"Pekingese",
+            "country": "China",
             "size": {
                 "body": "Little",
                 "weight": "3-5",
@@ -798,8 +827,8 @@
                 "https://storage-api.petstory.ru/resize/0x0x80/78/3d/00/783d00c782b54438a1de2436a1f886e8.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x80/d7/c8/89/d7c889cfd77841f68ef17c6f5565798a.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/29po0-fdgd456jm"
+            "description": {
+                "url": "http://localhost:3000/description/29po0-fdgd456jm"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -813,6 +842,7 @@
         {
             "id": "30hkl-fg647gjghj",
             "breed":"Pomeranian",
+            "country": "Germany",
             "size": {
                 "body": "Little",
                 "weight": "2-3",
@@ -830,8 +860,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/e4/ed/9a/e4ed9a7379a74fa09042ed8211fc1cc2.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/e1/c0/67/e1c067867ec14c038f8f916898377b04.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/304-tyufh6-jdfsdf"
+            "description": {
+                "url": "http://localhost:3000/description/304-tyufh6-jdfsdf"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -844,6 +874,7 @@
         {
             "id": "31fdgd-hgjgh6556",
             "breed":"Poodle",
+            "country": "Austria",
             "size": {
                 "body": "Average",
                 "weight": "10-12",
@@ -859,8 +890,8 @@
                 "https://storage-api.petstory.ru/resize/0x0x80/80/b4/9f/80b49f2185f54e25aa0f798946893790.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x80/70/c4/f7/70c4f7b14e5c4b12b6dfa00a01bba86b.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/31dfgfg-dgge5terg"
+            "description": {
+                "url": "http://localhost:3000/description/31dfgfg-dgge5terg"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -874,6 +905,7 @@
         {
             "id": "32fgh0-dsfg65gfhj",
             "breed":"Rottweiler",
+            "country": "Germany",
             "size": {
                 "body": "Little",
                 "weight": "42–50",
@@ -891,8 +923,8 @@
                 "https://storage-api.petstory.ru/resize/800x800x80/bf/d8/ae/bfd8aed1d46f46fdb8cd613b6962f34c.jpeg",
                 "https://storage-api.petstory.ru/resize/800x800x80/f7/40/7e/f7407ef30a744745b98d364645c1ea1f.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/32gj-gsd65[ff"
+            "description": {
+                "url": "http://localhost:3000/description/32gj-gsd65[ff"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -909,6 +941,7 @@
         {
             "id": "33fdgfh-ghjh43;ls",
             "breed":"Shiba Inu (Shiba Inu)",
+            "country": "Japan",
             "size": {
                 "body": "Average",
                 "weight": "8–12",
@@ -922,8 +955,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/shiba-inu/shiba4.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/shiba-inu/shiba5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/33jhhjd-fgh65fg"
+            "description": {
+                "url": "http://localhost:3000/description/33jhhjd-fgh65fg"
             },
             "competitions": [
                 "3sdknew8-3ksn3qo-dd",
@@ -937,6 +970,7 @@
         {
             "id": "34fghf-hjkfdh56olj-fg",
             "breed":"Dachshund",
+            "country": "Germany",
             "size": {
                 "body": "Little",
                 "weight": "8–12",
@@ -950,8 +984,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/taksa/dach_4.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/taksa/dach_5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/34jhk-po[sfdf43"
+            "description": {
+                "url": "http://localhost:3000/description/34jhk-po[sfdf43"
             },
             "competitions": [
                 "3sdknew8-3ksn3qo-dd",
@@ -965,6 +999,7 @@
         {
             "id": "35fghgfh-435gfghfg",
             "breed":"Tibetan mastiff",
+            "country": "Tibet",
             "size": {
                 "body": "Large",
                 "weight": "75–95",
@@ -978,8 +1013,8 @@
                 "https://storage-api.petstory.ru/resize/0x0x70/66/2b/48/662b48b3231d4c859d14254700e1d72a.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/02/38/97/023897c2202c4f5095e100d274eb2aa6.jpeg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/35fd6fghgf-ddgf"
+            "description": {
+                "url": "http://localhost:3000/description/35fd6fghgf-ddgf"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -996,6 +1031,7 @@
         {
             "id": "36sdf-fg435dghf",
             "breed":"Chow chow",
+            "country": "China",
             "size": {
                 "body": "Average",
                 "weight": "23-32",
@@ -1009,8 +1045,8 @@
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/chau-chau/chow_4.jpg",
                 "https://petstory.ru/resize/800x800x80/upload/images/articles/breeds/chau-chau/chow_5.jpg"
             ],
-            "location": {
-                "url": "http://localhost:3000/location/36dfg-fghfh3"
+            "description": {
+                "url": "http://localhost:3000/description/36dfg-fghfh3"
             },
             "competitions": [
                 "1ssf=45,dfi34-gffd45j",
@@ -1023,291 +1059,255 @@
             }
         }
     ],
-    "location": [
+    "description": [
         {
             "id": "sldflk234-va[psl-543scg",
-            "url": "http://localhost:3000/location/1sfsdf-dfg43g-fgkq0",
-            "country": "Austria",
+            "url": "http://localhost:3000/description/1sfsdf-dfg43g-fgkq0",
             "character" : "Австрийская гончая — порода собак из Австрии, которая редко встречается за пределами родины. Произошла она, по всей вероятности, от тирольских бракков, внешне они даже чем-то похожи. А те, в свою очередь, являются потомками еще более древних собак — кельтских бракков.",
             "care": "Короткая гладкая шерсть австрийской гончей не требует особого ухода даже в период линьки. Впрочем, это не значит, что за собакой не нужно ухаживать. Следует еженедельно удалять выпавшие волоски с помощью расчески или влажного полотенца, а во время линьки процедуру надо проводить чаще — хотя бы пару раз в неделю.",
             "conditionsDetention": "Несложно догадаться, что австрийская гончая — собака не для города. Ей требуется огромное пространство для занятий спортом. Поэтому частный дом с большим двором и возможностью выйти в парк или в лес — это необходимость, а не прихоть."
         },
         {
             "id": "sd;fmnkasd-g[pq;bcnz",
-            "url": "http://localhost:3000/location/2dsf[pdf,-sdoqw[pvms",
-            "country": "Austria",
+            "url": "http://localhost:3000/description/2dsf[pdf,-sdoqw[pvms",
             "character" : "Алабаи — это мощные сторожевые собаки с ярко выраженным стремлением к доминированию. К их воспитанию надо подходить очень серьезно. Следует учитывать, что простое подавление собаки (например, с применением грубой силы) может повлечь необратимые изменения в психике животного и сделать его излишне агрессивным.",
             "care": "У собак этой породы густая шерсть, которую необходимо регулярно вычесывать. В противном случае она будет сыпаться и оседать везде, где только можно. Кроме того, с алабаями следует не просто гулять, а очень много гулять. Этим сильным собакам нужны серьезные физические нагрузки, поэтому хозяину придется не просто выходить с собакой на поводке, но придумывать максимально сложные многочасовые маршруты (с подъемами и спусками), которые позволят собаке реализовать энергию.",
             "conditionsDetention": "Содержать алабая можно как в квартире, так и в загородном доме. Однако стоит учитывать размеры животного — в тесном пространстве оно будет чувствовать себя некомфортно. Безусловно, намного лучше собака этой породы будет чувствовать себя на природе: на открытом воздухе она может находиться круглые сутки, живя в специально обустроенной конуре."
         },
         {
             "id": "[p;lmdfq-bclknsdf'398",
-            "url": "http://localhost:3000/location/3fghdf-lkfawz-[kjlls",
-            "country": "Austria",
+            "url": "http://localhost:3000/description/3fghdf-lkfawz-[kjlls",
             "character": "Альпийская таксообразная гончая — очень редкая порода собак, которую практически невозможно встретить за пределами ее родины — Австрии. Порода считается универсальной: собаки могут как преследовать дичь по следу (в основном лис и зайцев), так и долго, продолжительно гнать добычу.",
             "care": "Короткая шерсть собаки не требует особого ухода, достаточно один-два раза в неделю протирать питомца полотенцем или массажной щеткой-расческой. Важно следить за чистотой ушей, состоянием глаз, зубов и когтей питомца, вовремя осуществляя чистку и другие необходимые процедуры.",
             "conditionsDetention": "Альпийская таксообразная собака, будучи гончей, способна подолгу бегать на свежем воздухе, это энергичные и выносливые животные. В условиях города они жить могут, но хозяин должен быть готов к частым и продолжительным прогулкам на природе. Необходимо находить время на такие вылазки как минимум один раз в неделю."        
         },
         {
             "id": "4fgh-fhfghf5hgj-dfgdfgh",
-            "url": "http://localhost:3000/location/4ghjsdfg-jkoi89-hvnhgjs",
-            "country": "United Kingdom",
+            "url": "http://localhost:3000/description/4ghjsdfg-jkoi89-hvnhgjs",
             "character" : "Поклонники бульдогов любят их за непосредственность и приземлённость. Они как маленькие дети: упрямятся, ленятся, ласкаются. К тому же они очень забавные и добрые. Английский бульдог уравновешен, спокоен и даже немного флегматичен. Однако это не относится к щенкам: они могут быть проворными, любопытными и очень игривыми.",
             "care": "Английские бульдоги — обладатели короткой шерсти, уход за которой состоит из еженедельного протирания влажным полотенцем для удаления выпавших волос. Однако особое внимание следует уделить складкам на морде, глазам и носу собаки. Их прочищают с помощью влажных тампонов, удаляя пыль и скопившуюся грязь. В этих складках может накапливаться влага, и тогда кожа будет воспаляться. Поэтому желательно протирать им складки на морде каждый день. Купать бульдога нужно по мере необходимости, используя специальные шампуни, в процессе стоит обращать внимание на состояние кожи собаки.",
             "conditionsDetention": "Английский бульдог прекрасно подходит для содержания в квартире, однако его место должно располагаться в теплом помещении без сквозняков. Эти собаки плохо переносят жару и холод, поэтому летом и зимой время прогулки желательно сократить. Бульдогу не нужны длительные и активные прогулки. Интенсивная физическая нагрузка им даже противопоказана. Для занятых людей, у которых нет возможности много времени проводить с собакой, это большой плюс. "
         },
         {
             "id": "5fd';sadm;-ewlkms94-df[w",
-            "url": "http://localhost:3000/location/5gldflk-34l;dsf,g553",
-            "country": "United Kingdom",
+            "url": "http://localhost:3000/description/5gldflk-34l;dsf,g553",
             "character" : "Несмотря на грозный внешний вид, английского мастифа не отличают свирепость, жестокость и нетерпимость к чужим. Напротив, это очень уравновешенная и спокойная собака, которая никогда не кинется исполнять приказ хозяина, не взвесив все за и против. Из-за этой черты часто возникают проблемы с дрессировкой: представители этой породы бывают очень упрямы, а их послушания можно добиться, только заслужив доверие.",
             "care": "Хотя мастифы короткошерстные собаки, они довольно сильно линяют, поэтому их рекомендуется расчесывать ежедневно с помощью качественной резиновой щетки и массажной перчатки. С учетом размеров питомца этот процесс занимает много времени. Мыть его рекомендуется по мере загрязнения, но не слишком часто – в среднем один раз в полгода.",
             "conditionsDetention": "Из-за больших размеров собакам этой породы тесно жить в городской квартире, вот почему идеальное место проживания для них – загородный дом."
         },
         {
             "id": "6fghfh-werewlkj-hj",
-            "url": "http://localhost:3000/location/6dghfg-65756df-76867",
-            "country": "United Kingdom",
+            "url": "http://localhost:3000/description/6dghfg-65756df-76867",
             "character" : "Английский спрингер-спаниель — активная и дружелюбная собака. В ней нет агрессии или злобы, и порой кажется, что питомец всегда пребывает в замечательном настроении. Иногда, правда, веселье выходит за рамки: собака слишком увлекается игрой и начинает баловаться. Такое поведение нужно вовремя пресекать.",
             "care": "Красивая волнистая шерсть спрингер-спаниеля нуждается в достаточно тщательном уходе. Собаку расчесывают с помощью массажной щетки дважды в неделю. Во время линьки процедуру проводят чаще. Особое внимание стоит уделить ушам собаки. Висячие уши животного могут стать местом возникновения и развития инфекционных заболеваний, если вовремя не проводить их чистку.",
             "conditionsDetention": "Спрингер-спаниелю нужны многочасовые прогулки с обязательными спортивными элементами: бег, апортировка и т. д. Не забывайте, что это охотничий пес, который нуждается в физических нагрузках. Кроме того, важно следить и за его рационом. Как и все собаки этой группы, он склонен к набору веса."
         },
         {
             "id": "7dgd-dg3fgg87-yukhjm",
-            "url": "http://localhost:3000/location/7fdghj-jkghksfd-=67",
-            "country": "Switzerland",
+            "url": "http://localhost:3000/description/7fdghj-jkghksfd-=67",
             "character" : "Аппенцеллер зенненхунд — активная, трудолюбивая и сильная собака, отличный охранник и сторож. Нуждается в ранней социализации и дрессировке. С подозрением относится к незнакомцам, но агрессии не проявляет. Аппенцеллер неплохо поддается дрессировке, он умен и внимателен. Впрочем, давать слабину не стоит: собаки этой породы достаточно независимы и самостоятельны в принятии решений.",
             "care": "Аппенцеллер зенненхунд — обладатель достаточно густой короткой шерсти. Чтобы сохранить дом в чистоте, два-три раза в неделю собаку необходимо расчесывать с помощью массажной щетки. Также важно ежемесячно проводить гигиенические процедуры: чистку зубов и стрижку когтей.",
             "conditionsDetention": "Аппецнеллер зенненхунд — некрупная собака, но в силу своего темперамента достаточно активная и свободолюбивая. Представители породы могут жить в условиях городской квартиры, но по-настоящему счастливы будут в частном доме. Собаку нельзя сажать на цепь или в вольер: это компаньон, который должен жить в доме."
         },
         {
             "id": "8dlkmgfds-;lksgmd43-43",
-            "url": "http://localhost:3000/location/8fghfgk,-43kdlfmg943",
-            "country": "Argentina",
+            "url": "http://localhost:3000/description/8fghfgk,-43kdlfmg943",
             "character" : "Аргентинский дог — молодая порода собак, выведенная в начале 20 века. Его ближайшими родственниками являются бойцовские собаки, от которых он унаследовал крепкое мускулистое тело, мощь и отвагу. Действительно, вид аргентинского дога поначалу может испугать, но стоит познакомиться с ним поближе, и становится ясно: это добрый и верный друг своего хозяина.",
             "care": "Аргентинский дог крайне прост в уходе. Он обладает короткой шерстью, которую следует вычесывать массажной щеткой в период линьки. В остальное время достаточно протирать животное влажным полотенцем. Купать его часто не рекомендуется, достаточно делать это по мере необходимости, но не чаще 3–4 раз в год.",
             "conditionsDetention": "Аргентинский дог прекрасно чувствует себя как в городской квартире, так и в загородном доме. От природы эта собака имеет атлетическое телосложение, поэтому не нуждается в особых физических нагрузках. Тем не менее, чтобы пес не заскучал, его необходимо выгуливать дважды в день, а общая продолжительность прогулок должна составлять не менее 2–3 часов."
         },
         {
             "id": "9sdmf;snf-34t,dd43",
-            "url": "http://localhost:3000/location/9gfhfgh-fjh4tfg-hj",
-            "country": "France",
+            "url": "http://localhost:3000/description/9gfhfgh-fjh4tfg-hj",
             "character" : "Первое, что бросается в глаза при знакомстве с артезиано-нормандским бассетом, — его нерасторопность, невероятное спокойствие и уравновешенность. Кажется, ничто не способно вывести эту собаку из равновесия. Некоторые всерьез могут решить, что питомцы ленивы. Но это вовсе не так! На самом деле артезиано-нормандский бассет активен и игрив. Просто он будет получать не меньшее удовольствие от того, что лежит на диване рядом с любимым хозяином. Собаку не нужно развлекать, она сама подстроится под ритм жизни семьи.",
             "care": "Короткая шерсть артезиано-нормандского бассета не требует тщательного ухода. Собак еженедельно протирают влажной рукой, чтобы удалить выпавшие волоски. Отдельного внимания заслуживают лишь уши питомца. Их нужно осматривать каждую неделю, чистить по мере необходимости. Дело в том, что висячие уши, поскольку они недостаточно вентилируются, подвержены развитию инфекционных заболеваний и воспалению.",
             "conditionsDetention": "Артезиано-нормандский бассет — универсальная собака в плане условий содержания. Он одинаково комфортно чувствует себя как в городской квартире, так и в частном доме. Любимец вряд ли потребует от владельца многочасовых прогулок, а в холодную погоду он скорее предпочтет уютный теплый дом."
         },
         {
             "id": "10sdlf-sdfsd0sf-daf",
-            "url": "http://localhost:3000/location/10cxvbcxbfd0-fg66",
-            "country": "USA",
+            "url": "http://localhost:3000/description/10cxvbcxbfd0-fg66",
             "character" : "Аусси отличаются уравновешенностью, энергичностью и активностью. Они очень ласковые и жизнерадостные. Представители породы хорошо воспринимают дрессировку, радостно встречают новые задания и отлично их выполняют. Для них очень важно, чтобы хозяин уделял им внимание и хвалил за помощь. Если же питомца оставить дома одного, то он обязательно заскучает и начнет портить вещи и мебель.",
             "care": "Шерсть у аусси средней длины. Линька происходит обильно, сезонно. Если в комнате, где живет собака, воздух сухой, то процесс линьки длится дольше. Купать овчарку желательно раз в месяц или по мере ее загрязнения, используя специальные шампуни. Если питомец обитает на улице, то зимой он сам отлично справляется с чисткой шерстного покрова, катаясь по снегу. А летом можно организовать поход на речку и искупаться там. После этого собаку обязательно нужно ополоснуть чистой проточной водой.",
             "conditionsDetention": "Если питомец содержится дома, то искупать его можно в ванной, предварительно положив на дно прорезиненный коврик, чтобы лапы не соскальзывали. После водных процедур шерсть следует хорошо протереть полотенцем и можно просушить феном."
         },
         {
             "id": "11qteox[-fhafd65",
-            "url": "http://localhost:3000/location/11fgh-gfjfhz0",
-            "country": "Germany",
+            "url": "http://localhost:3000/description/11fgh-gfjfhz0",
             "character" : "Баварская гончая — достойный представитель семейства, это собака одного хозяина, которому она готова преданно служить всю жизнь. Приятные в общении, они хорошо относятся ко всем членам семьи. Да и незнакомцев встречают довольно спокойно, без явной агрессии. Так что рассчитывать на то, что охотничья собака станет отличным охранником, не стоит. Хотя, конечно, все зависит от конкретного животного и его характера.",
             "care": "Баварская горная гончая не требует от хозяина тщательного ухода. Периодически питомца вычесывают с помощью массажной щетки, удаляют выпавшие волоски. В период линьки процедуру повторяют чаще, до 2-3 раз в неделю. Особое внимание владельцы баварских гончих уделяют ушам собаки. При недостаточном уходе в них развиваются болезнетворные бактерии, которые провоцируют развитие воспалений.",
             "conditionsDetention": "Баварская горная гончая, как несложно догадаться, требует от хозяина активности. Владелец должен быть готов к ежедневным многочасовым прогулкам и играм. Уставшая собака — счастливая собака, к баварским гончим это выражение подходит как нельзя лучше."
         },
         {
             "id": "12hgjg-fdg[,esadf98-5",
-            "url": "http://localhost:3000/location/12pfg-str467hgj",
-            "country": "England",
+            "url": "http://localhost:3000/description/12pfg-str467hgj",
             "character" : "Бассет-хаунд был выведен как охотник, поэтому его с трудом можно назвать компаньоном, ведь этот пес, несмотря на внешнюю тяжесть и грузность, с удовольствием будет участвовать в подвижных играх. Кроме того, у бассет-хаунда отлично развит нюх, и на прогулке он обязательно заинтересуется новым запахом, стараясь отыскать источник. Хозяину следует быть очень внимательным к этой его особенности: увлеченный поиском бассет может отправиться в самостоятельное путешествие.",
             "care": "Бассет-хаунды — обладатели короткой шерсти, которая не требует тщательного ухода. Достаточно протирать собаку влажным полотенцем один раз в неделю для удаления выпавших волосков. Слабым местом этой породы считаются уши и глаза. Их рекомендуется промывать и прочищать каждую неделю, удаляя грязь и скопившиеся выделения. Кроме того, у бассет-хаундов наблюдается обильное слюноотделение, что стоит учитывать при желании завести собаку этой породы.",
             "conditionsDetention": "Несложно догадаться, что австрийская гончая — собака не для города. Ей требуется огромное пространство для занятий спортом. Поэтому частный дом с большим двором и возможностью выйти в парк или в лес — это необходимость, а не прихоть."
         },
         {
             "id": "13fghhj-hjgd-547645",
-            "url": "http://localhost:3000/location/13gfo-r32gffg",
-            "country": "Belgium",
+            "url": "http://localhost:3000/description/13gfo-r32gffg",
             "character" : "Бельгийская овчарка — порода необычная. Если вы спросите в США, как она выглядит, вам покажут фото длинношерстной собаки черного цвета — грюнендаля. А вот в Бельгии вас попросят уточнить, о какой именно разновидности овчарки вы хотите узнать больше. И это вовсе не путаница. Бельгийские овчарки холодно относятся к незнакомцам, что делает их отличными охранниками и защитниками. Но для этого они должны быть дрессированными. Без должных тренировок собака может быть излишне агрессивной или трусливой.",
             "care": "Уход за бельгийской овчаркой зависит от типа шерсти питомца. Грюнендаль и тервюрен требуют более частых вычесываний — каждые три дня, в то время как малинуа и лакенуа будет достаточно одного раза в неделю. В период линьки шерсть питомцев нуждается в более тщательном уходе: собаку необходимо вычесывать ежедневно, чтобы удалить выпавшие волоски. Купают её нечасто, чтобы не испортить качество и структуру шерсти.",
             "conditionsDetention": "Бельгийская овчарка прекрасно чувствует себя как в условиях городской квартиры, так и за городом, в частном доме. Главное для нее — активные и насыщенные прогулки. Это особенно актуально, если вы живете в городе. Активные тренировки, прогулки в парке и пробежки обязательно должны присутствовать в жизни бельгийской овчарки. Также не забывайте про наличие дома игрушек, которые собака может грызть."
         },
         {
             "id": "1409jhcj-dfgfghf9-4",
-            "url": "http://localhost:3000/location/14fghfg-thfdh87",
-            "country": "Belgium",
+            "url": "http://localhost:3000/description/14fghfg-thfdh87",
             "character" : "Бельгийский мастиф - серьезная, склонная к агрессии собака, которая нуждается в больших физических нагрузках. Признает только своего хозяина и его семью. Новичкам такое животное заводить не стоит.",
             "care": "В уходе бельгийские мастифы совсем неприхотливы. По мере необходимости надо осматривать глаза и уши, а вот когти обычно стачиваются сами при достаточном выгуле. Шерсть может доставить некоторые хлопоты в период линьки, но обычно это не становится проблемой. Для ухода достаточно периодически вычесывать собаку густой жесткой щеткой.",
             "conditionsDetention": "Собака хороша для загородного дома, там она найдет применение своим охранным качествам; в случае, если мастифа берут в квартиру, нужно понимать, что выгулу и занятиям с собакой придется посвящать минимум 2–3 часа ежедневно. Кроме того, не следует забывать и о том, что маленькое помещение для массивного пса просто непригодно."
         },
         {
             "id": "15iuo-fdg45-fg",
-            "url": "http://localhost:3000/location/15gjkhjk-rdtergg-g",
-            "country": "Italy",
+            "url": "http://localhost:3000/description/15gjkhjk-rdtergg-g",
             "character" : "Бергамаско — древняя порода собак, об истории происхождения которой известно крайне мало. Специалисты считают, что ее предками были мастифообразные собаки, пришедшие вместе с кочевниками с востока. Так или иначе, родиной больших лохматых животных называют итальянский город Бергамо в Ломбардии. Именно там началась целенаправленная селекция овчарок, которые и сегодня помогают пастухам в гористой местности.",
             "care": "Роскошная шерсть бергамаско потребует от владельца собаки терпения и времени. За колтунами-шнурами ухаживают очень бережно — их нельзя расчесывать и срезать. Шерсть собаки покрыта специальным жировым слоем, который выполняет защитную функцию. Поэтому купают животных нечасто — 2-3 раза в год со специальным шампунем и кондиционером. Как правило, владельцы бергамаско доверяют уход за шерстью профессионалам: в домашних условиях новичок едва ли сможет справиться с гигиеной собаки.",
             "conditionsDetention": "Бергамаско можно содержать в просторной городской квартире, но при этом собака потребует от хозяина многочасовых прогулок на свежем воздухе. Конечно же, питомец будет гораздо свободнее чувствовать себя в загородном доме."
         },
         {
             "id": "16hgjg-sdg45hk",
-            "url": "http://localhost:3000/location/16dgh-df3245gfh987",
-            "country": "Switzerland",
+            "url": "http://localhost:3000/description/16dgh-df3245gfh987",
             "character" : "Бернский зенненхунд уравновешенный и добродушный. Псы контактны и миролюбивы. Хорошо уживаются со всеми домашними любимцами, никогда не вступают в конфликты с другими собаками во время прогулки. Для них не характерны агрессия и враждебный настрой. С незнакомыми людьми ведут себя либо приветливо, либо равнодушно. Бернский зенненхунд во всем пытается угодить человеку и послушно выполняет любые его поручения. Отличаются повышенной чувствительностью: они с легкостью понимают интонацию голоса и смену настроения человека.",
             "care": "Длинная и густая шерсть бернского зенненхунда требует довольно тщательного внимания – ее лучше вычесывать 2-3 раза в неделю, применяя специальную щетку. В период активной линьки уход нужен усиленный – процедуру проводят каждый день. Для очесов на ногах и животе используют пуходерку с металлическими или силиконовыми зубцами, что поможет избежать появления колтунов. Уже образовавшиеся колтуны выстригать не рекомендуется, лучше попытаться их распутать.",
             "conditionsDetention": "Желательно приобретать специальные средства – например, воск. Он защищает лапы от вредных химических реагентов."
         },
         {
             "id": "17fg-weh[]oin0",
-            "url": "http://localhost:3000/location/17-675fgh98ghgf0r",
-            "country": "United Kingdom",
+            "url": "http://localhost:3000/description/17-675fgh98ghgf0r",
             "character" : "Бигли чрезвычайно активны. Для того чтобы выплескивать свою энергию, питомец должен регулярно ходить на прогулку. В летнее время года специалисты советуют обязательно вывозить собаку в лес. Кажется, что бигли очень дружелюбны и милы. Но не стоит забывать, что изначально это охотничьи собаки, которые нуждаются в серьезном отношении со стороны хозяев. Они очень упрямы, и без дрессировки не обойтись. Без должного внимания и твердой руки бигль выходит из-под контроля. Это чревато не только непослушанием на улице, но и порчей всего, что попадется в поле зрения собаки. Неуемная энергия бигля может вылиться в разрушения, масштаб которых способен не просто удивить, а шокировать неподготовленных владельцев.",
             "care": "Бигли очень чистоплотны и не нуждаются в особом уходе. Короткую шерсть нужно расчесывать не чаще одного раза в неделю. В период линьки вычёсывание мягкой щёткой можно производить каждый день. Частые купания — тоже ни к чему. Единственное, на что стоит обратить внимание, — когти на лапах. Их следует регулярно подстригать. Рекомендуется проводить эту процедуру один раз в две недели.",
             "conditionsDetention": " Активный бигль, проживающий в городской квартире, стачивает когти об асфальт на прогулках. Но этого не произойдёт, если окружающая территория покрыта преимущественно мягким грунтом."
         },
         {
             "id": "18tfhg-fdg459-l",
-            "url": "http://localhost:3000/location/18-fdg-etrfdgd86-y",
-            "country": "United Kingdom",
+            "url": "http://localhost:3000/description/18-fdg-etrfdgd86-y",
             "character" : "Вельш-корги — одна из старейших английских пород собак, которая делится на два типа: кардиган и пемброк. Принципиально они различаются между собой окрасом и некоторыми особенностями характера: кардиганы более спокойные и осторожные, а пемброки более подвижные и энергичные. Но на этом различия заканчиваются. Корги — невероятно забавные псы на коротких лапках. Они выглядят очень милыми, но их небольшие размеры обманчивы. Прежде всего следует помнить, что собаки этой породы пусть маленькие, но овчарки. Они умны, легко поддаются дрессировке и достаточно быстро осваивают новые, даже сложные команды. Корги очень любопытны и обожают все новое. Даже дрессировка может им наскучить, если занятия каждый раз проходят однообразно. Хозяину следует это учитывать, вводить дополнительные элементы и менять порядок упражнений, если он хочет добиться от корги послушания и заинтересованности в процессе. Собаки этой породы очень наблюдательны. Они хорошо понимают, когда можно подойти к хозяину и приласкаться, а когда лучше выдержать дистанцию. Складывается впечатление, что они понимают, как влияют на хозяев, и пользуются своим природным шармом и магнетизмом, выпрашивая угощения. Отказать корги очень трудно, но если постоянно идти на поводу у собаки, то у нее могут появиться проблемы с лишним весом.",
             "care": "Корги очень сильно линяют. В обычное время их следует расчесывать 2–3 раза в неделю. В период линьки это приходится делать каждый день.",
             "conditionsDetention": "Корги обожают гулять. Оптимальный для них режим — это 2–3 прогулки в день по часу. Но это, пожалуй, единственная сложность, с которой может столкнуться владелец. Из-за своих компактных размеров эти собаки отлично себя чувствуют не только в больших домах, но и в городских квартирах. Главное для них — иметь свое обустроенное место для сна и отдыха. В остальном корги очень неприхотливы."
         },
         {
             "id": "19hjkh-=dfgdfg456gkj",
-            "url": "http://localhost:3000/location/19jhkhj-dfg65kjgf",
-            "country": "Austria",
+            "url": "http://localhost:3000/description/19jhkhj-dfg65kjgf",
             "character" : "Согласно одной из теорий, предки современных вельш-корги пемброк попали в Уэльс вместе с викингами и фламандскими завоевателями еще в далеком 1107 году. Уже тогда небольшие собаки пасли стада коров, лошадей, овец и даже защищали скотный двор. Корги считаются одной из самых древних овчарок, это первая признанная в этой группе порода. К началу XX века сформировалось два типа корги — пемброк и кардиган. Впервые они были официально представлены на лондонской выставке собак в 1925 году. Интересно, что судьи отдали предпочтение именно типу пемброк, тогда же был основан клуб любителей этих собак. А клуб любителей корги кардиган появился лишь спустя год. От своего «собрата» пемброки отличаются формой ушей (они меньше), более коротким туловищем и прямыми лапами. Ну, и характер у них более задиристый. Пожалуй, самым известным ценителем породы вельш-корги пемброк является королева Великобритании Елизавета Вторая. Еще бы! Эти очаровательные псы способны влюбить в себя с первого взгляда.",
             "care": "Густая шерсть вельш-корги пемброк потребует от владельца тщательного ухода, если тот не хочет находить волоски по всей квартире. Питомцев следует вычесывать с помощью жесткой щетки или фурминатора каждые 2-3 дня. Купать животных надо по мере необходимости. Но в дождливую погоду придется делать это чаще, так как собаки низкого роста быстро пачкаются в грязи.",
             "conditionsDetention": "Вельш-корги пемброк прекрасно уживаются в городской квартире благодаря компактному размеру. Правда, им нужны достаточно активные прогулки 2-3 раза в день. Важно играть и бегать с питомцем, развлекать его апортировкой и предлагать различные упражнения, чтобы он не заскучал."
         },
         {
             "id": "20fghfh76hgjh-fghgfh",
-            "url": "http://localhost:3000/location/20jgkfd-ljkl;;kfg",
-            "country": "Holland",
+            "url": "http://localhost:3000/description/20jgkfd-ljkl;;kfg",
             "character" : "Голландская овчарка или, как ее еще называют, хердер — близкий родственник бельгийских овчарок. Несмотря на то что официально порода была признана лишь в конце XIX века, появилась она гораздо раньше. Задолго до этого овчарки помогали голландским фермерам пасти стада овец и коров. Сегодня хердер по-прежнему является рабочей собакой, хотя с успехом выставляется на самых престижных выставках.",
             "care": "Уход за голландской овчаркой зависит от ее типа шерсти. Сложнее всего содержать длинношерстных питомцев, их необходимо расчесывать каждые три дня. Шерсть жесткошерстных питомцев не выпадает самостоятельно, поэтому в период линьки собак рекомендуется отвозить к профессиональному грумеру. Проще всего ухаживать за короткошерстными собаками: достаточно протирать их шерсть влажной тряпкой или просто рукой, чтобы удалить выпавшие волоски.",
             "conditionsDetention": "Голландская овчарка вряд ли будет уютно чувствовать себя в городской квартире. Это свободолюбивые собаки, и лучшее место обитания для них — двор загородного дома. Сажать на цепь их ни в коем случае нельзя. А вот собственный утепленный вольер и свободный выгул — залог счастливой жизни хердера."
         },
         {
             "id": "21quygd-jksd65yj",
-            "url": "http://localhost:3000/location/21dg-dfgdf87dfg",
-            "country": "England",
+            "url": "http://localhost:3000/description/21dg-dfgdf87dfg",
             "character" : "Джек-рассел-терьер — английская охотничья собака. Ее ценили за острый нюх, выносливость и высокий уровень дисциплины. Считается, что дрессировка собак этой породы не требует от хозяина особых усилий, но это совершенно не значит, что можно легко обойтись и без нее: невоспитанный джек-рассел превращается в неуправляемого упрямого разрушителя.",
             "care": "Эти собаки не нуждаются в особом уходе. У них короткая жесткая шерсть, которую следует расчесывать специальной рукавицей. Купаться джек-расселы любят, но мыть их достаточно 1–2 раза в месяц, и то при необходимости. Самым простым в уходе является гладкошерстный представитель породы. Его не нужно вычесывать, а загрязнения с шерсти можно убирать влажным полотенцем. Но эти собаки линяют дважды в год, процесс длится около месяца. Волоски шерсти довольно жесткие, они похожи на маленькие иголки. Будьте готовы к тому, что их придется снимать с одежды и мебели.",
             "conditionsDetention": "Несмотря на свой компактный размер, эта порода станет не лучшим выбором для квартиры. Лучше, если в распоряжении пса будет участок возле частного дома. Тогда он сможет резвиться и бегать даже тогда, когда вы отсутствуете. Помните, что забор должен быть высоким и надежным. Джек-рассел-терьер — одна из самых «прыгучих» пород. Поэтому невысокий забор пес с легкостью перепрыгнет, а под ненадежным сделает подкоп."
         },
         {
             "id": "22fdgh-5675gfhfg",
-            "url": "http://localhost:3000/location/21sdfg-879fd435",
-            "country": "Germany",
+            "url": "http://localhost:3000/description/21sdfg-879fd435",
             "character" : "Доберман и человек отлично ладят между собой, но только если этот человек является хозяином. Собака всегда подчиняется своему владельцу и, несмотря на свои охранные и бойцовские качества, считается вполне дружелюбной. Характерное для этой породы качество — бдительность. Доберманы всегда начеку, всегда готовы кинуться на защиту своей территории или хозяина, они вовремя замечают любые опасности. Независимо, от кого исходит угроза — других собак, диких животных или агрессивных людей, — доберман моментально реагирует на нее, и его дружелюбие резко сменяется смелыми, энергичными попытками ограничить агрессию и опасность. Бесстрашный, энергичный и внимательный — три качества, которые свойственны доберману. Вместе с тем распространено мнение о том, что это агрессивная порода: собака может накинуться на незнакомца. Это в корне неверно. При должном воспитании животное будет нейтрально относиться к незнакомым людям, а проявлять агрессию только в том случае, если решит, что хозяин находится в опасности. Но обратите внимание: дрессированное животное никогда не проявит инициативу, оно будет подчиняться своему владельцу.",
             "care": "Доберман не требует особо тщательного ухода. Все, что необходимо от хозяина, — еженедельно расчесывать и протирать собаку влажным полотенцем. Нельзя забывать об осмотре и чистке ушей, глаз и зубов питомца. Раз в неделю устраивайте профилактическую чистку и осмотр. Для ухода за шерстью лучше использовать скребницы с плотными резиновыми зубчиками треугольной формы. Щенков добермана нельзя переохлаждать — место для их содержания должно быть теплым. На полу должен лежать коврик.",
             "conditionsDetention": "Доберманы любят физическую активность, поэтому нуждаются в многочасовых прогулках и пробежках. Зимой для них стоит приобрести теплую одежду, ведь их шерсть не содержит подшерстка, который согревает животных. Доберманы отличаются достаточно крепким здоровьем. Однако необходимо тщательно следить за питанием собаки. Несмотря на то что представители породы имеют устойчивую пищеварительную систему, нередко случается заворот желудка, характерный для крупных собак с широкой грудной клеткой."
         },
         {
             "id": "23fgfdg-fdgdfgdxvc6-t",
-            "url": "http://localhost:3000/location/23dsfs890fdg-dgg54",
-            "country": "Austria",
+            "url": "http://localhost:3000/description/23dsfs890fdg-dgg54",
             "character" : "Кавказская овчарка — мощная собака с сильным характером. Сведения о том, где и при каких обстоятельствах впервые упоминались собаки этой породы, расходятся между собой и не имеют доказательной базы. Доподлинно известно, что их использовали в качестве охранников и пастушьих собак. До сих пор кавказцы по праву считаются лучшими сторожевыми собаками. Кавказские овчарки обладают очень непростым характером. Они независимы, склонны к доминированию. Ничто не сможет заставить эту собаку подчиниться хозяину, который в ее глазах не обладает должным авторитетом. Причем завоевать ее, используя физическую силу, ругань или какие-либо меры наказания, невозможно. Кавказцы очень хорошо разбираются в человеческих характерах, и отличить внутреннюю силу от бравады для них не представляет труда.",
             "care": "Кавказские овчарки бывают длинношерстные и короткошерстные. И в том, и в другом случае требуется уход за шерстью. Собак следует регулярно и тщательно вычесывать. Они сильно линяют один раз в год, и в этот период расчесывать собаку придется каждый день. Кавказцев следует купать только по мере необходимости и лучше в теплое время года, чтобы шерсть как следует просохла.",
             "conditionsDetention": "Кавказские овчарки не просто большие собаки — они очень большие. В условиях тесной городской квартиры эти собаки чувствуют себя неуютно. Из-за этого может появиться нервозность, и овчарка даже может стать агрессивной. Собакам этой породы нужно пространство и свобода передвижения. Кавказцы не любят сидеть на привязи. Учитывая, что они еще и весьма громкие, можно точно сказать: собака на цепи будет очень много лаять, шуметь и привлекать к себе внимание."
         },
         {
             "id": "24dgh-678gfh456hft-fjw",
-            "url": "http://localhost:3000/location/24-fghfhg-rthfth65",
-            "country": "Canada",
+            "url": "http://localhost:3000/description/24-fghfhg-rthfth65",
             "character" : "Буквально все представители этой породы отличаются невероятным дружелюбием и доверчивостью. Эти качества сочетаются с такой же прекрасной уживчивостью. Чистокровный лабрадор привязан к своему владельцу, хотя не прочь пообщаться и с другими людьми. В некотором смысле такая черта их характера имеет не очень хорошую обратную сторону – таких собак практически невозможно использовать для охраны. Мягкий нрав не позволяет им проявлять агрессию даже в отношении вора или грабителя. Более того они могут воспринять такого человека как новый объект для общения. Тем не менее, если питомец  заметить явную угрозу для своего хозяина – в стороне он стоять не останется и будет активно защищать своего владельца и от опасных людей, и от столь же опасных диких или агрессивных животных.",
             "care": "Собака обладает густой жесткой шерстью, не требующей специального ухода. Ее достаточно мыть и расчесывать примерно раз в месяц. Важно обращать внимание на физическое состояние собак, так как они склонны к полноте. По своей природе они активны, но без продолжительных прогулок и энергичных игр быстро поправляются. Дрессировка и постоянные упражнения направляют энергию в мирное русло.",
             "conditionsDetention": "Представители этой породы могут жить как в загородном доме, так и в квартире, если рядом есть место, где можно побегать и поиграть. Без дрессировки щенки и питомцы, которым уже по несколько лет от роду, бывают непослушны, поэтому людям пожилого возраста и детям может быть непросто с ними справиться."
         },
         {
             "id": "25aerdgb.zco-gyrd8",
-            "url": "http://localhost:3000/location/25jlrdg-tdyrtysd-uy",
-            "country": "Tibet",
+            "url": "http://localhost:3000/description/25jlrdg-tdyrtysd-uy",
             "character" : "Лхаса апсо – одна из самых древних пород собак, заботливо сохраняемая тибетцами на протяжении тысячелетий. Почти три тысячи лет назад тибетские монахи и знать одомашнили горных волков, бродивших по Гималаям, и научили их охранять свои жилища от набегов диких животных и кочевников. От диких предков лхаса апсо унаследовали ум, невероятную чуткость и настороженное отношение к окружающим. Несмотря на небольшой размер, они были отличными домашними сторожами и своевременно оповещали о враге, пробравшемся через уличную охрану.",
             "care": "Лхаса апсо обладает густой тяжелой шерстью с подшерстком. Ее следует вычесывать минимум раз в неделю и подравнивать шерсть по мере необходимости. В противном случае собака потеряет характерный внешний вид. График мытья собаки зависит от ее образа жизни и места проживания. «Диванных» собак нужно мыть по мере загрязнения. Более активных питомцев, проводящих много времени на улице, надо подвергать этой процедуре чаще – хотя бы раз в месяц.",
             "conditionsDetention": "Собаки породы лхаса апсо, невзирая на свои небольшие габариты, требуют простора, иначе могут заскучать и набрать лишний вес. Лучше всего они будут чувствовать себя в квартире средних размеров."
         },
         {
             "id": "26fghf-sdf4365-jkg",
-            "url": "http://localhost:3000/location/26fgh-hjkty65-tf",
-            "country": "United Kingdom",
+            "url": "http://localhost:3000/description/26fgh-hjkty65-tf",
             "character" : "Манчестер-терьер — необычайно преданная семье собака, но при этом главным для нее всегда будет хозяин. Если ко всем домочадцам терьер будет относиться с любовью, то к нему — почти с благоговением. Оставлять собаку надолго в одиночестве нельзя — без человека питомец начинает тосковать и грустить. При этом портится и его характер: компанейский и жизнерадостный пес становится капризным, непослушным и даже агрессивным.",
             "care": "Ухаживать за гладкошерстным манчестер-терьером очень просто. Достаточно протирать его влажной рукой 2-3 раза в неделю, чтобы избавиться от выпавших волосков. В период линьки, которая проходит весной и осенью, питомца необходимо вычесывать массажной щеткой или перчаткой. Не менее важно следить за здоровьем зубов собаки. Их надо чистить каждую неделю. Уход за когтями можно доверить профессионалам или подстригать их дома самостоятельно.",
             "conditionsDetention": "Манчестер-терьер отлично чувствует себя даже в небольшой городской квартире. Конечно, при условии достаточных прогулок и физических нагрузок. С терьером можно заниматься собачьими видами спорта — например, аджилити и фрисби, питомец будет рад такому типу нагрузок и разнообразию активностей. Представители породы показывают неплохие результаты на соревнованиях."
         },
         {
             "id": "27jgk-sdf456-ghjghj",
-            "url": "http://localhost:3000/location/27iu467-ggf43-fghjf",
-            "country": "China",
+            "url": "http://localhost:3000/description/27iu467-ggf43-fghjf",
             "character" : "Жителя Китая верят, что мопсы – это потомки собачек Фу, известных как «небесные львы Будды». С древних времен их ценили за внимательность, послушность и жизнерадостность. Эту породу также отличает безграничная преданность своему хозяину, поэтому их нельзя надолго оставлять одних – это может вызвать стресс у животного. Если планируете командировку или отдых, рассмотрите возможность взять питомца с собой. Если это невозможно, его можно доверить друзьям – мопсы хорошо идут на контакт с другими людьми.",
             "care": "Самой важной частью ухода за мопсом является регулярная чистка складок на морде. Следить за их состоянием необходимо очень тщательно, так как именно тут чаще всего развиваются бактерии и грибки. Из-за специфического строения черепа мопсы подвержены различным заболеваниям глаз, а также могут иметь проблемы с дыханием. Нужно следить, чтобы собака не переутомлялась, и не давать ей перегреваться. Однако вести малоподвижный образ жизни мопсам тоже вредно, так как они имеют склонность к полноте. ",
             "conditionsDetention": "Из-за проблем с дыханием необходимо регулярно проветривать помещение, в котором содержится мопс, чтобы ему не было душно, и следить за температурой. В помещениях с повышенной влажностью представители этой породы чувствуют себя плохо."
         },
         {
             "id": "28fhj-[p[sdff4-g",
-            "url": "http://localhost:3000/location/28sgfdg-fgh56456",
-            "country": "Germany",
+            "url": "http://localhost:3000/description/28sgfdg-fgh56456",
             "character" : "Эти питомцы отличаются умом и сообразительностью. Они очень преданы своему хозяину. Психика у этих собак стабильная. Стремление к самостоятельности и упрямство им не свойственно. Немецкие овчарки очень быстро осваивают новую информацию, обучаются командам без особых проблем. Любят активные игры на природе. Шум в квартире их не пугает, они спокойно относятся к вечеринкам и праздникам. К детям терпимы. С другими домашними питомцами уживаются хорошо, особенно если выросли с ними вместе.",
             "care": "Короткая гладкая шерсть австрийской гончей не требует особого ухода даже в период линьки. Впрочем, это не значит, что за собакой не нужно ухаживать. Следует еженедельно удалять выпавшие волоски с помощью расчески или влажного полотенца, а во время линьки процедуру надо проводить чаще — хотя бы пару раз в неделю.",
             "conditionsDetention": "Немецкие овчарки должны быть активными. От постоянного лежания на диване такое животное быстро потеряет форму. Излюбленная игра таких собак – преодоление препятствий. Заниматься подобными тренировками можно уже с 4-месячного возраста. Когти подстригают по мере необходимости. Обычно такая процедура требуется собаке не чаще одного раза в месяц. Для этого используют специальные кусачки или ножницы. Мыть пса необходимо как можно реже – только по мере загрязнения шерсти. Самостоятельно чистить уши немецкой овчарке не рекомендуют. Если животное не проявляет никакого беспокойства, то их вообще лучше не трогать. Обращаться в специализированную клинику необходимо тогда, когда собака начинает их активно чесать, выражая недовольство."
         },
         {
             "id": "29hjk-dfg435ghj",
-            "url": "http://localhost:3000/location/29po0-fdgd456jm",
-            "country": "China",
+            "url": "http://localhost:3000/description/29po0-fdgd456jm",
             "character" : "Пекинесы считаются одной из древнейших пород. Они содержались во дворце китайского императора и за свое сходство со львами почитались как духи-охранники императорской семьи. Видимо, великое прошлое наложило отпечаток на характер этой собаки. Пекинесы упрямы, капризны и требовательны. Они любят внимание, ревнивы и агрессивно реагируют на чужаков.",
             "care": "Уход за пекинесом — задача не из легких. Во-первых, у собак этой породы очень густой подшерсток, который нужно регулярно вычесывать. Во-вторых, следует уделять внимание гигиене глаз, носа и ушей. Из-за особого строения носоглотки собаки часто чихают и хрипят, могут страдать повышенным течением из носа.",
             "conditionsDetention": "Пекинесы — домашние собаки. Им ни к чему большие дворовые территории. Они чувствуют себя комфортно в условиях городской квартиры. Долгие прогулки и игры — это не для этих степенных царственных животных. Активность они обычно проявляют в детстве. Повзрослев, они перестают играть и ведут себя очень сдержанно."
         },
         {
             "id": "30ygj-45fdfgdsf-hgjghj",
-            "url": "http://localhost:3000/location/304-tyufh6-jdfsdf",
-            "country": "Germany",
+            "url": "http://localhost:3000/description/304-tyufh6-jdfsdf",
             "character" : "Очень веселая и жизнерадостная порода. Иногда владельцу может казаться, что в его питомце запрятан моторчик: шпиц редко спокойно сидит на месте. Он все время куда-то бежит, что-то делает и всегда готов играть. Поэтому прогулки с этой собакой скорее вынужденная необходимость — шпицу нужна возможность хотя бы частично выплеснуть всю свою энергию, чтобы случайно, играя, не разнести дом. Эти декоративные собачки невероятно милы. Их внешняя аккуратность и миниатюрность создают у окружающих ошибочное впечатление, что к ним можно спокойно подходить, гладить и трепать за ушки. На самом деле, шпиц очень горд и не подпускает к себе незнакомцев. Фамильярность он может расценить как проявление агрессии и не преминет защитить свои честь и достоинство от посягательств невежд.",
             "care": "Особое внимание следует уделить шерсти. У шпицев очень плотный подшерсток, который следует вычесывать не реже одного раза в неделю. При таком уходе шпиц не будет линять и доставлять неудобства своей осыпавшейся шерстью.",
             "conditionsDetention": "Шпицев можно и нужно стричь. Частота зависит от животного и целей хозяина. Если владелец решит серьезно заниматься участием в выставках, посещение грумера должно будет стать регулярным."
         },
         {
             "id": "31fdsgd-=fghfh45",
-            "url": "http://localhost:3000/location/31dfgfg-dgge5terg",
-            "country": "Austria",
+            "url": "http://localhost:3000/description/31dfgfg-dgge5terg",
             "character" : "Пудели – жизнерадостные и активные собаки. Они с удовольствием поддержат любую игру, довольно легко переносят умеренные физические нагрузки – бег, прыжки через препятствия. Этот пес спортивен и практически всегда находится в движении – на прогулке и дома его будут интересовать новые люди, запахи, звуки. Порода относится к одной из самых легкообучаемых. У пуделей высокий уровень интеллекта. Питомцы готовы быстро воспринимать новую информацию и осваивать навыки. Дрессировать их в принципе несложно. Обычно собаки запоминают новые команды буквально после 2-3 повторений.",
             "care": "Здоровье любой собаки зависит, прежде всего, от того, насколько хороший уход за ней осуществляется. Ведь большая масса проблем возникает именно из-за плохой гигиены. Приучают щенка к гигиеническим процедурам с самого раннего возраста. Так он научится быстрее спокойно реагировать на мытье, стрижку когтей, вычесывание.",
             "conditionsDetention": "Пуделям необходимы регулярные стрижки. Проводить процедуру можно либо самостоятельно, либо, обратившись к грумеру. Следует понимать, что этот процесс довольно сложный и длительный (занимает не менее получаса). Если у вас нет достаточного опыта, то лучше доверить своего любимца специалисту."
         },
         {
             "id": "32dfgtdg-fghfha66jh",
-            "url": "http://localhost:3000/location/32gj-gsd65[ff",
-            "country": "Germany",
+            "url": "http://localhost:3000/description/32gj-gsd65[ff",
             "character" : "Ротвейлер — служебная собака, слава которой не всегда отражает суть породы. Несправедливо считается, что это злые и агрессивные животные, которые способны напасть даже на хозяина. Это не так — при правильном воспитании и дрессировке ротвейлер станет настоящим другом, охранником и защитником семьи. Ротвейлер — собака, созданная для работы и физической активности. Как и любая другая служебная порода, она требует профессиональной дрессировки и воспитания. Тогда животное станет не просто другом, но самым послушным и ласковым питомцем, который будет готов отдать жизнь за своего хозяина. Считается, что терпение и ум этой породы позволяют ей легко находить общий язык с детьми, даже самыми маленькими. Воспитанный ротвейлер отлично подходит на роль семейной собаки.",
             "care": "Ротвейлер не нуждается в особом уходе. Купать собаку рекомендуется 1–2 раза в год, вычесывать — по мере линьки, то есть 2–3 раза в месяц. Также не забывайте чистить собаке зубы, чтобы избежать образования зубного налета, просматривайте уши и глаза. Для чистки зубов можно использовать специальные пасты, а также кости из сыромятной кожи. Собака, грызя их, самостоятельно избавляется от зубного налета. Еще одна альтернатива — ультразвуковая чистка зубов в ветеринарной клинике. Особенно она эффективна в запущенных случаях.",
             "conditionsDetention": "Ротвейлер очень энергичен, поэтому ему необходима физическая нагрузка. Бег, велоспорт, активные занятия на свежем воздухе — то, к чему должен быть готов владелец представителя этой породы. Без должной нагрузки характер собаки может испортиться, что, в конечном счете, отразится на воспитании и дрессировке. Однако с осторожностью стоит выгуливать собаку в жаркие дни: ротвейлеры плохо переносят высокие температуры. Активность собаки на солнце может дать излишнюю нагрузку на сердце."
         },
         {
             "id": "33ret-879vcx657ghj",
-            "url": "http://localhost:3000/location/33jhhjd-fgh65fg",
-            "country": "Japan",
+            "url": "http://localhost:3000/description/33jhhjd-fgh65fg",
             "character" : "Сиба-ину — одна из самых древних пород собак из Азии. Археологи обнаружили, что предки современных сиба-ину были завезены в Японию более двух с половиной тысячелетий назад. За это время они успели перенять столь непривычный для нас менталитет своих хозяев. Сиба-ину отличаются от большинства пород именно своим характером, который, как ни парадоксально, делает их похожими скорее на кошек, чем на собак. Главной особенностью является их независимость от хозяина и сдержанность в поведении и проявлении эмоций. Эти собаки дисциплинированны, чистоплотны и умны. Они очень сообразительны и способны быстро понимать требования хозяина.",
             "care": "Сиба-ину — чистоплотная порода. Эти собаки не любят пачкать лапы в грязи или в лужах. Их короткая и плотная шерсть устойчива к загрязнениям, однако ее необходимо периодически вычесывать. Линька происходит два раза в год — осенью и весной. В это время вычёсывать собаку придется дважды в день. Также необходимо подрезать отросшую шерсть на подушечках лап.",
             "conditionsDetention": "Сиба-ину очень активны, поэтому они подойдут только тем, кто ведёт или готов вести активный образ жизни. Идеальна для этих собак жизнь в загородном доме с собственным участком — так они смогут выплескивать накопившуюся энергию. Если же будущий хозяин живет в городе, он должен ежедневно выходить с собакой на пробежки и уделять много времени активному отдыху и прогулкам с питомцем."
         },
         {
             "id": "34fghj98-43fdgdhfrt",
-            "url": "http://localhost:3000/location/34jhk-po[sfdf43",
-            "country": "Germany",
+            "url": "http://localhost:3000/description/34jhk-po[sfdf43",
             "character" : "Такса является самой старой норной породой собак, точное время появления которой неизвестно. Это сообразительные, энергичные, азартные животные, которые отличаются самостоятельностью, уверенностью в себе и самоуважением, граничащим с упрямством. Таксы хорошо разбираются в людях и в своем выборе категоричны. Более того, они хорошо запоминают лица, долго помнят и обиду, и похвалу.",
             "care": "Своенравным и достаточно хитрым по своей натуре таксам необходима дрессировка, иначе они с владельцем не смогут понимать друг друга. Также эти собаки любят поесть и всегда выпрашивают лакомый кусочек, поэтому хозяин должен быть стойким. Для того чтобы шерсть у гладкошерстной и длинношерстной такс была блестящей и гладкой, а у жесткошерстной — аккуратной, за ней нужно ухаживать. Мыть минимум 2 раза в месяц, длинную шерсть вычесывать.",
             "conditionsDetention": "В силу своего маленького размера, таксы отлично живут как в городе, так и за городом. Для предотвращения ожирения и для поддержания психического здоровья таксы с ней нужно играть, бегать, заниматься активным отдыхом. Слабое место всех такс — их спина, им нельзя прыгать с высоты."
         },
         {
             "id": "35hghkl-678dfg456",
-            "url": "http://localhost:3000/location/35fd6fghgf-ddgf",
-            "country": "Tibet",
+            "url": "http://localhost:3000/description/35fd6fghgf-ddgf",
             "character" : "Тибетский мастиф спокойный, преданный своему хозяину и работе. Эти собаки только со стороны кажутся свирепыми, агрессивными и опасными, на самом деле они очень ласковые, особенно с детьми, любят проводить время с семьей, но в то же время им не чуждо стремление к уединению. Они могут часами лежать рядом с хозяином. Тибетский мастиф – надежный защитник своей семьи и территории. Монахи доверяли этой породе защиту монастырей, полагаясь на их мощь и сильный голос.",
             "care": "Тибетский мастиф обладает густой длинной шерстью и очень густым подшерстком. Собаку этой породы надо вычесывать хотя бы раз в неделю, мыть — по мере загрязнения, но не реже одного раза в месяц. В холодное время года шерсть становится гуще, так что к лету у тибетцев начинается линька. В это время собаку необходимо чаще вычесывать. Также нужно периодически стричь шерсть на лапах между пальцами. Там могут застревать мелкие камни, репейники и колтуны. В запущенных случаях это может привести к воспалению. Не забывайте осматривать собакам уши и протирать ватным диском, так как у представителей этой породы могут быть отиты.",
             "conditionsDetention": "Такой крупной собаке будет не очень комфортно даже в квартире средних размеров. Лучше всего для тибетского мастифа подойдет дом с большим участком. Гулять с мастифом тоже нужно. Долгие спокойные прогулки подойдут собакам, которые не живут на большом участке."
         },
         {
             "id": "36ioiu-=ff45,mih",
-            "url": "http://localhost:3000/location/36dfg-fghfh3",
-            "country": "China",
+            "url": "http://localhost:3000/description/36dfg-fghfh3",
             "character" : "Чау-чау — очень древняя и очень непростая порода. Согласно некоторым легендам, эти собаки произошли от медведей, унаследовав от них костяк, синюю пасть и бесстрашие (а также короткую носоглотку, поэтому во сне многие чау-чау храпят). Сейчас все чаще можно встретить информацию о родстве с тибетским волком. В любом случае чау-чау не просто домашний питомец. Это самостоятельный член семьи, со своим мнением и местом в стае.",
             "care": "Роскошная грива чау-чау нуждается в регулярном вычесывании. Шерсть у собак этой породы растет вертикально, поэтому вычесывать их следует в направлении от хвоста к морде. Кроме того, у чау-чау очень густой подшерсток, который также следует регулярно вычесывать. Это особенно важно, так как влияет на термообмен. Сейчас часто можно встретить рекомендации о стрижке собак этой породы. Раньше заводчики категорически не рекомендовали этого делать и настаивали именно на вычесывании. Стрижку использовали только в крайних случаях, для скрытия внешних дефектов породы.",
             "conditionsDetention": "Чау-чау нельзя назвать активной собакой. Эти животные не очень игривы и предпочитают спокойные, степенные прогулки. Но хозяину стоит быть готовым к тому, что прогулки должны быть продолжительными. Лучше их строить таким образом, чтобы собака вынужденно проявляла физическую активность: поднималась в горку и спускалась с нее, сбегала по лестницам — это благоприятно скажется на развитии мускулатуры."

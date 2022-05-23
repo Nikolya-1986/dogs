@@ -5,7 +5,7 @@ import { catchError, delay, Observable, retry } from "rxjs";
 
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
-import { LocationDTO } from "../../interfaces/location.interface";
+import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO } from "../../interfaces/dog.interface";
 
 
@@ -35,7 +35,7 @@ export class FacadeService {
         private _injector: Injector
     ) { }
 
-    public getDogs(): Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, LocationDTO>[]> {
+    public getDogs(): Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[]> {
         return this.dogService.getDogs().pipe(
             delay(3500),
             retry(3),

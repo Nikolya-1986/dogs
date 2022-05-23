@@ -1,11 +1,11 @@
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
-import { LocationDTO } from "../../interfaces/location.interface";
+import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO } from "../../interfaces/dog.interface";
 
 
 export interface DogState {
-    dogs: DogDTO<CompetitionsDTO, BreedGroupDTO, LocationDTO>[],
+    dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[],
 };
 
 export const initialDogState: DogState = {

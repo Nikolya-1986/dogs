@@ -7,6 +7,7 @@ import { DogsRoutingModule } from './dogs-routing.module';
 import { DogsListComponent } from './components/dogs-list/dogs-list.component';
 import { DogsItemComponent } from './components/dogs-item/dogs-item.component';
 import { DogsCardComponent } from './components/dogs-card/dogs-card.component';
+import { DogsFilterComponent } from './components/dogs-filter/dogs-filter.component';
 
 
 @NgModule({
@@ -15,12 +16,14 @@ import { DogsCardComponent } from './components/dogs-card/dogs-card.component';
     DogsListComponent,
     DogsItemComponent,
     DogsCardComponent,
+    DogsFilterComponent,
+
   ],
   imports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    DogsRoutingModule
+    DogsRoutingModule,
   ]
 })
 export class DogsModule { }

@@ -4,7 +4,7 @@ import { Observable } from "rxjs";
 
 import { CompetitionsDTO } from "../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../interfaces/breed-group.iterface";
-import { LocationDTO } from "../interfaces/location.interface";
+import { DescriptionDTO } from "../interfaces/description.interface";
 import { DogDTO } from "../interfaces/dog.interface";
 
 
@@ -19,8 +19,8 @@ export class DogService {
         private _httpClient: HttpClient,
     ) {}
 
-    public getDogs(): Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, LocationDTO>[]> {
-        return this._httpClient.get<DogDTO<CompetitionsDTO, BreedGroupDTO, LocationDTO>[]>(`${this.BASE_URL}/dogs`);
+    public getDogs(): Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>[]> {
+        return this._httpClient.get<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>[]>(`${this.BASE_URL}/dogs`);
     };
 
 }

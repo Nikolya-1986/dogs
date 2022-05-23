@@ -2,7 +2,7 @@ import { createAction, props, union } from "@ngrx/store";
 
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
-import { LocationDTO } from "../../interfaces/location.interface";
+import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO } from "../../interfaces/dog.interface";
 
 
@@ -17,7 +17,7 @@ export const loadDogsRequest = createAction(
 
 export const loadDogsSuccess = createAction(
     DogActionsType.LOAD_DOGS_SUCCESS,
-    props<{ dogs: DogDTO<CompetitionsDTO, BreedGroupDTO, LocationDTO>[] }>(),
+    props<{ dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[] }>(),
 );
 
 const allDogAction = union({

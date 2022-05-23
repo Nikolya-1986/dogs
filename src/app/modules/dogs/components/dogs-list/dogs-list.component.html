@@ -1,8 +1,16 @@
-<section class="dogs dogs__card">
-    <ng-container *ngFor="let dog of dogs$ | async; trackBy: trackByFn">
-        <app-dogs-card
-            [dog]="dog"
-            >
-        </app-dogs-card>
-    </ng-container>
-</section>
+<article class="dogs dogs__list">
+
+    <section class="dogs__filter">
+        <app-dogs-filter></app-dogs-filter>
+    </section>
+
+    <section class="dogs__card">
+        <ng-container *ngFor="let dog of dogs$ | async; trackBy: trackByFn">
+            <app-dogs-card
+                [dog]="dog"
+                >
+            </app-dogs-card>
+        </ng-container>
+    </section>
+
+</article>
