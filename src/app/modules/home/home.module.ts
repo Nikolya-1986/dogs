@@ -10,11 +10,12 @@ import { ErrorComponent } from './components/error/error.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 
+
 @NgModule({
   imports: [
     CommonModule, 
     FormsModule,
-    RouterModule 
+    RouterModule,
   ],
   declarations: [
     HomeComponent, 

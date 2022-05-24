@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { SharedStoreFacade } from 'src/app/store/shared/shared.facade';
-import { SharedState } from 'src/app/store/shared/shared.state';
+import { routerAnimation } from '../../animations/router-animation';
+import { SharedStoreFacade } from '../../store/shared/shared.facade';
+import { SharedState } from '../../store/shared/shared.state';
 
 import { MenuItem } from '../../interfaces/menu.interfsce';
 import { MenuService } from '../../services/menu.service';
@@ -11,6 +13,9 @@ import * as sharedActions from '../../store/shared/shared.actions';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
+  animations: [
+    routerAnimation
+  ],
 })
 export class HomeComponent implements OnInit {
 
@@ -33,6 +38,10 @@ export class HomeComponent implements OnInit {
   public getMenuItems(): void {
     this.menuItems = this.menuService.menuItems;
   };
+
+  // public prepareRoute(outlet: RouterOutlet) {
+  //   return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation'];
+  // }
 
   private _loadStatus(): void {
     this.isLoading$ = this._sharedStoreFacade.getLoadingSpinner$;

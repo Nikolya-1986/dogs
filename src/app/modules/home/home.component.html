@@ -14,7 +14,9 @@
             </p>
         </ng-container>
         <ng-template #showContent>
-            <router-outlet></router-outlet> 
+            <div [@routerStateAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">
+                <router-outlet #outlet="outlet"></router-outlet>
+            </div>
         </ng-template>
         
     </main>
