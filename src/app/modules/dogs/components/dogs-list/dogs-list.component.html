@@ -1,7 +1,10 @@
 <article class="dogs dogs__list">
 
     <section class="dogs__filter">
-        <app-dogs-filter></app-dogs-filter>
+        <app-dogs-filter
+            [searchQuery]="searchQuery"
+            >
+        </app-dogs-filter>
     </section>
 
     <section class="dogs__card">

@@ -6,7 +6,7 @@ import {
     query,
 } from '@angular/animations';
   
-export const routerAnimation = trigger('routerStateAnimation', [
+export const routerAnimation = trigger('outerRouteAnimation', [
     transition('* <=> *', [
         query(':enter, :leave', [
             style({

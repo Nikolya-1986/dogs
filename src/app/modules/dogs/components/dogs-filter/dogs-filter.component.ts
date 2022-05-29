@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-dogs-filter',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogsFilterComponent implements OnInit {
 
+  @Input() public searchQuery = new FormControl;
+
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  public ngOnInit(): void {
+  };
 
 }

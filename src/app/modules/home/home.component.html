@@ -8,16 +8,16 @@
     </header>
     <app-loading-spinner *ngIf="isLoading$ | async"></app-loading-spinner>
     <main class="content">
-        <ng-container *ngIf="errorMessage$ | async as message; else showContent">
+        <ng-container *ngIf="errorMessage$ | async as message">
             <p style="color: red; text-align:center; text-transform: uppercase;">
                 Error from backend: {{ message }}
             </p>
         </ng-container>
-        <ng-template #showContent>
-            <div [@routerStateAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">
+        <ng-container>
+            <div [@outerRouteAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">
                 <router-outlet #outlet="outlet"></router-outlet>
             </div>
-        </ng-template>
+        </ng-container>
         
     </main>
     <footer class="content">

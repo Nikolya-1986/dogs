@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import { Observable } from 'rxjs';
@@ -17,7 +17,7 @@ import * as sharedActions from '../../store/shared/shared.actions';
     routerAnimation
   ],
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, AfterViewInit {
 
   public menuItems!: MenuItem[];
   public logo: string = 'assets/images/logo.jpg';
@@ -28,12 +28,17 @@ export class HomeComponent implements OnInit {
     private menuService: MenuService,
     private _storeShared: Store<SharedState>,
     private _sharedStoreFacade: SharedStoreFacade,
+    private changeRef: ChangeDetectorRef
   ) { }
 
   public ngOnInit(): void {
     this.getMenuItems();
     this._loadStatus();
-  }
+  };
+
+  public ngAfterViewInit(): void {
+    this.changeRef.detectChanges();
+  }; 
 
   public getMenuItems(): void {
     this.menuItems = this.menuService.menuItems;

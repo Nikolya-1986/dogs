@@ -1,1 +1,17 @@
-<p>dogs-filter works!</p>
+<section class="filter__wrapper filter">
+    <div class="filter__container">
+        <div class="filter__field field">
+            <label for="searchParametrs">
+                Search breed, singularity or country dog
+            </label>
+            <input
+                id="searchParametrs"
+                type="search"
+                placeholder="Enter breed, singularity or country dog..."
+                [formControl]="searchQuery"
+                aria-describedby="filter"
+            />
+        </div>
+    </div>
+
+</section>

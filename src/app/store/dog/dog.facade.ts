@@ -20,5 +20,13 @@ export class DogStoreFacade {
     public loadDogs(): void {
         this._dogStore.dispatch(dogActions.loadDogsRequest());
     };
+
+    public loadDogsByFilter(query: string): void {
+        this._dogStore.dispatch(dogActions.setByFilter( { filters: { filterBy: ['breed', 'country', 'singularity'], query }}));
+    };
+
+    public resetDogsFilter(): void {
+        this._dogStore.dispatch(dogActions.resetDogsStore());
+    };
      
 }
