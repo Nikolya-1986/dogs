@@ -16,3 +16,5 @@ export enum Country {
     Japan = 'Japan',
     Other_Countries = 'Other countries',
 };
+
+export type CountryEnumStrings = keyof typeof Country;

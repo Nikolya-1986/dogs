@@ -10,3 +10,7 @@ const getSDogState = createFeatureSelector<DogState>(DOG_STATE_NAME);
 export const getDogs = createSelector(getSDogState,
     (state: DogState) => state.dogs,
 );
+
+export const getPagination = createSelector(getSDogState,
+    (state: DogState) => state.pagination,
+)

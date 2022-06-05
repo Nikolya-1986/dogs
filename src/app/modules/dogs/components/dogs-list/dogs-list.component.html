@@ -7,8 +7,28 @@
         </app-dogs-filter>
     </section>
 
+    <section class="dogs__pagination">
+        <app-dogs-pagination
+            [pageSizes]="pageSizes"
+            [itemsPerPage]="itemsPerPage"
+            [currentPage]="currentPage"
+            (currentCountPageSize)="onCurrentCountPageSize($event)"
+            (currentPageChange)="currentPageChange($event)"
+            >
+
+        </app-dogs-pagination>
+    </section>
+
     <section class="dogs__card">
-        <ng-container *ngFor="let dog of dogs$ | async; trackBy: trackByFn">
+        <ng-container *ngFor="let dog of dogs$ 
+            | async 
+            | paginate: {
+                itemsPerPage: itemsPerPage,
+                currentPage: currentPage,
+                totalItems: count
+            }
+            trackBy: trackByFn"
+            >
             <app-dogs-card
                 [dog]="dog"
                 >

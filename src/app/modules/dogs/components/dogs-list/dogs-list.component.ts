@@ -17,21 +17,48 @@ import { DogDTO } from "../../../../interfaces/dog.interface";
 })
 export class DogsListComponent implements OnInit, OnDestroy {
 
-  public dogs$!: Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[]>;
+  public dogs$!: Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[] | any>;
+  public pagination$!: any;
   public searchQuery = new FormControl('');
+  public currentPage: number = 1;
+  public count: number = 0;
+  public itemsPerPage: number = 8;
+  public pageSizes = [8, 16, 24, 32, 36];
 
   private _destroy$: Subject<boolean> = new Subject();
   
+
   constructor(
     private _dogStoreFacade: DogStoreFacade,
   ) { }
 
   public ngOnInit(): void {
     this._fetchDogs();
+    this._fetchPaginatoinPage();
   };
 
   public trackByFn(ind: number, item: any): number {
     return ind;
+  };
+
+  public onCurrentCountPageSize(event: number): void {
+    this.itemsPerPage = event;
+    this.currentPage = 1;
+  };
+
+  public currentPageChange(event: number): void {
+    this.currentPage = event;
+  };
+
+  private _fetchPaginatoinPage(): void {
+    const pagination = {
+      itemsPerPage: this.itemsPerPage,
+      currentPage: this.currentPage,
+      count: this.count,
+      pageSizes: this.pageSizes
+    }
+    this._dogStoreFacade.loadPagination(pagination);
+    this.pagination$ = this._dogStoreFacade.getPagination$;
   };
 
   private _fetchDogs(): void {

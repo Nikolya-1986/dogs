@@ -4,7 +4,14 @@
 
     &__card {
         display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+        justify-content: start;
+        flex-flow: row wrap;
     }
+
+    &__pagination  {
+        display: flex;
+        justify-content: end;
+        flex-flow: row wrap;
+    }
+
 }

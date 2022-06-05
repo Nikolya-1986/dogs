@@ -1,4 +1,4 @@
-import { KindSport } from "./enums/kind-sport.interface";
+import { KindSportEnumStrings } from "./enums/kind-sport.interface";
 
 export interface CompetitionsDTO {
     id: string,
@@ -6,7 +6,7 @@ export interface CompetitionsDTO {
 
 export interface Competitions {
     id: string,
-    kindSport: KindSport,
+    kindSport: KindSportEnumStrings,
     description: string,
     image: string,
 };

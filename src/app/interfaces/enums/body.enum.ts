@@ -3,3 +3,5 @@ export enum Body {
     Little = 'Little',
     Large = 'Large',
 };
+
+export type BodyEnumStrings = keyof typeof Body;

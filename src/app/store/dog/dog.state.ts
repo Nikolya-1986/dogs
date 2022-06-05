@@ -6,15 +6,45 @@ import { DogDTO } from "../../interfaces/dog.interface";
 
 
 export interface DogState {
-    dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[],
-    filterQuery: string;
-    filterBy: string[];
+    dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[];
+    filtres: FilterState,
+    sort: SortState,
+    pagination: PaginationState,
+};
+
+export interface SortState {
+    sortDirection: string;
+    sortKey: string;
+};
+
+export interface FilterState {
+    filterQuery: string;// строка для поиска
+    filterBy: string[];// массив полей по которым необходимо искать
+};
+
+export interface PaginationState {
+    itemsPerPage: number;//количество элементов на каждой странице
+    pageSizes: Array<number>;//по сколько выводить элементов на 
+    currentPage: number;//текущая страница
+    count: number;//всего страниц
 };
 
 export const INITIAL_DOG_STATE: DogState = {
     dogs: [],
-    filterQuery: '', 
-    filterBy: [] 
+    filtres: {
+        filterQuery: '',
+        filterBy: [],
+    },
+    sort: {
+        sortDirection: '',
+        sortKey: '',
+    },
+    pagination: {
+        itemsPerPage: 0,
+        currentPage: 0,
+        count: 0,
+        pageSizes: [],
+    }
 };
 
 export default interface DefaultDogState {

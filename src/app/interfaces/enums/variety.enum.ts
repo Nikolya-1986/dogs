@@ -1,4 +1,6 @@
 export enum Variety {
-    frequent = 'Frequent',
-    rare = 'Rare',
+    Frequent = 'Frequent',
+    Rare = 'Rare',
 };
+
+export type VarietyEnumStrings = keyof typeof Variety;

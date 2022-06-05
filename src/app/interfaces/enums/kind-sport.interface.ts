@@ -6,3 +6,5 @@ export enum KindSport {
     WeightPulling = 'Weight pulling',
     DrivingSports = 'DrivingSports',
 };
+
+export type KindSportEnumStrings = keyof typeof KindSport;

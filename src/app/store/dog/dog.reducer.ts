@@ -16,7 +16,7 @@ const _dogReduserInternal = createReducer(
     })),
     on(dogActions.loadDogsSuccess, (state, action) => ({
         ...state,
-        dogs: [...action.dogs],
+        dogs: [...state.dogs, ...action.dogs],
     })),
     on(dogActions.setByFilter, (state, { filters }) => {
 
@@ -40,11 +40,43 @@ const _dogReduserInternal = createReducer(
             filterBy: fiterByField,
         }
     }),
+    on(dogActions.setSortKey, (state, { sortKey }) => {
+        let sortedDogs = [...state.dogs];
+        sortedDogs.sort((a: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> | any, b: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> | any) => {
+            const param_a = a[sortKey];
+            const param_b = b[sortKey];
+            return compare(param_a, param_b)
+        })
+        return {
+            ...state,
+            dogs: [...sortedDogs],
+            sortKey: sortKey,
+        }
+    }),
+    on(dogActions.setPaginationPage, (state, { pagination }) => {
+        return {
+            ...state,
+            pagination: pagination
+        }
+    }),
     on(dogActions.resetDogsStore, (state) => ({
         ...state,
         ...dogState.INITIAL_DOG_STATE,
     }))
 );
+
+export function compare(a: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>, b: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>,) {
+
+    const compare = a.age - b.age;
+  
+    if (compare > 0) {
+      return 1;
+    }
+    else if ( compare < 0) {
+      return -1;
+    }
+    else return 0;
+};
 
 export function DogReducer(state: dogState.DogState | undefined, action: Action) {
     return _dogReduserInternal(state, action);

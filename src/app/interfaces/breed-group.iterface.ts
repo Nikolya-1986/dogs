@@ -1,4 +1,4 @@
-import { Variety } from "./enums/variety.enum";
+import { VarietyEnumStrings } from "./enums/variety.enum";
 
 export interface BreedGroupDTO {
     id: string,
@@ -7,7 +7,7 @@ export interface BreedGroupDTO {
 export interface BreedGroup {
     id: string,
     type: string,
-    variety: Variety,
+    variety: VarietyEnumStrings,
     image: string,
     residents: Array<string>,
 };

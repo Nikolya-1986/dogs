@@ -6,3 +6,5 @@ export enum Singularity {
     Aggressive = 'Aggressive',
     Guard = 'Guard'
 };
+
+export type SingularityEnumStrings = keyof typeof Singularity;
