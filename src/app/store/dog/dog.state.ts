@@ -13,7 +13,6 @@ export interface DogState {
 };
 
 export interface SortState {
-    sortDirection: string;
     sortKey: string;
 };
 
@@ -36,7 +35,6 @@ export const INITIAL_DOG_STATE: DogState = {
         filterBy: [],
     },
     sort: {
-        sortDirection: '',
         sortKey: '',
     },
     pagination: {

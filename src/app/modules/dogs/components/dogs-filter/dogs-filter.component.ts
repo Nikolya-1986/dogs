@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -9,10 +9,13 @@ import { FormControl } from '@angular/forms';
 export class DogsFilterComponent implements OnInit {
 
   @Input() public searchQuery = new FormControl;
-
+  @Input() public sortKeyForDogs = new FormControl;
+  @Input() public filterNumberDogs!: string[];
+ 
   constructor() { }
 
   public ngOnInit(): void {
   };
+
 
 }

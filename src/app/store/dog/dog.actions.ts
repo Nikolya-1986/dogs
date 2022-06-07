@@ -5,7 +5,7 @@ import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO } from "../../interfaces/dog.interface";
-import { PaginationState } from "./dog.state";
+import { FilterState, PaginationState } from "./dog.state";
 
 
 export enum DogActionsType {
@@ -28,7 +28,7 @@ export const loadDogsSuccess = createAction(
 
 export const setByFilter = createAction(
     DogActionsType.SET_FILTER_BY,
-    props<{ filters: { filterBy: string[]; query: string } }>(),
+    props<{ filters: FilterState }>(),
 );
 
 export const setSortKey = createAction(

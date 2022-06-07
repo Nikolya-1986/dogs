@@ -9,6 +9,7 @@ import { CompetitionsDTO } from "../../../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../../../interfaces/description.interface";
 import { DogDTO } from "../../../../interfaces/dog.interface";
+import * as dogs from '../../dogs.constant';
 
 @Component({
   selector: 'app-dogs-list',
@@ -20,6 +21,8 @@ export class DogsListComponent implements OnInit, OnDestroy {
   public dogs$!: Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[] | any>;
   public pagination$!: any;
   public searchQuery = new FormControl('');
+  public sortKeyForDogs = new FormControl('Default');
+  public filterNumberDogs: string[] = JSON.parse(JSON.stringify(dogs.FILTER_NUMBER_DOGS));
   public currentPage: number = 1;
   public count: number = 0;
   public itemsPerPage: number = 8;
@@ -46,7 +49,7 @@ export class DogsListComponent implements OnInit, OnDestroy {
     this.currentPage = 1;
   };
 
-  public currentPageChange(event: number): void {
+  public onCurrentPageChange(event: number): void {
     this.currentPage = event;
   };
 
@@ -58,16 +61,21 @@ export class DogsListComponent implements OnInit, OnDestroy {
       pageSizes: this.pageSizes
     }
     this._dogStoreFacade.loadPagination(pagination);
-    this.pagination$ = this._dogStoreFacade.getPagination$;
+    this.pagination$ = this._dogStoreFacade.pagination$;
   };
 
   private _fetchDogs(): void {
     this._dogStoreFacade.loadDogs();
-    this.dogs$ = this._dogStoreFacade.getDogs$;
+    this.dogs$ = this._dogStoreFacade.dogs$;
     this.searchQuery.valueChanges.pipe(
       takeUntil(this._destroy$),
     )
     .subscribe((query: string) => this._dogStoreFacade.loadDogsByFilter(query));
+
+    this.sortKeyForDogs.valueChanges.pipe(
+      takeUntil(this._destroy$),
+    )
+    .subscribe((sort: string) => this._dogStoreFacade.loadDogsSortKey(sort));
   };
 
   public ngOnDestroy(): void {

@@ -3,6 +3,8 @@
     <section class="dogs__filter">
         <app-dogs-filter
             [searchQuery]="searchQuery"
+            [filterNumberDogs]="filterNumberDogs"
+            [sortKeyForDogs]="sortKeyForDogs"
             >
         </app-dogs-filter>
     </section>
@@ -13,7 +15,7 @@
             [itemsPerPage]="itemsPerPage"
             [currentPage]="currentPage"
             (currentCountPageSize)="onCurrentCountPageSize($event)"
-            (currentPageChange)="currentPageChange($event)"
+            (currentPageChange)="onCurrentPageChange($event)"
             >
 
         </app-dogs-pagination>

@@ -21,7 +21,7 @@ const _dogReduserInternal = createReducer(
     on(dogActions.setByFilter, (state, { filters }) => {
 
         let filteredDogs = [...state.dogs];
-        const searchQueryForDog = filters.query;
+        const searchQueryForDog = filters.filterQuery;
         const fiterByField = filters.filterBy;
         if (searchQueryForDog.trim()) {
             filteredDogs = filteredDogs.filter((dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> | any) => {
@@ -41,16 +41,44 @@ const _dogReduserInternal = createReducer(
         }
     }),
     on(dogActions.setSortKey, (state, { sortKey }) => {
-        let sortedDogs = [...state.dogs];
-        sortedDogs.sort((a: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> | any, b: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> | any) => {
-            const param_a = a[sortKey];
-            const param_b = b[sortKey];
-            return compare(param_a, param_b)
+        let sortedDogs = [...state.dogs].sort((
+            a: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>, 
+            b: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>
+        ): any => {
+            const param_a_id = Number(a.id.slice(0,3).match(/\d+/g));
+            const param_b_id = Number(b.id.slice(0,3).match(/\d+/g));
+            const param_a_height = Number(a.size.height.slice(0,2).match(/\d+/g));
+            const param_b_height = Number(b.size.height.slice(0,2).match(/\d+/g));
+            const param_a_weight = Number(a.size.weight.slice(0,2).match(/\d+/g));
+            const param_b_weight= Number(b.size.weight.slice(0,2).match(/\d+/g));
+            if (sortKey === 'Default') {                
+                return compare(param_b_id, param_a_id);
+            }
+            if (sortKey === 'Life long(Long-short)') {
+                return compare(a.age, b.age);
+            }
+            if (sortKey === 'Life long(Short-long)') {
+                return compare(b.age, a.age);
+            }
+            if (sortKey === 'Height(Tall-short)') {
+                return compare(param_a_height, param_b_height);
+            }
+            if (sortKey === 'Height(Short-tall)') {
+                return compare(param_b_height, param_a_height);
+            }
+            if (sortKey === 'Weight(Big-small)') {
+                return compare(param_a_weight, param_b_weight);
+            }
+            if (sortKey === 'Weight(Small-big)') {
+                return compare(param_b_weight, param_a_weight);
+            }
         })
         return {
             ...state,
             dogs: [...sortedDogs],
-            sortKey: sortKey,
+            sort: {
+                sortKey: sortKey,
+            },
         }
     }),
     on(dogActions.setPaginationPage, (state, { pagination }) => {
@@ -65,15 +93,13 @@ const _dogReduserInternal = createReducer(
     }))
 );
 
-export function compare(a: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>, b: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>,) {
+export function compare(a: number | string, b: number | string) {
 
-    const compare = a.age - b.age;
-  
-    if (compare > 0) {
-      return 1;
-    }
-    else if ( compare < 0) {
+    if (a > b) {
       return -1;
+    }
+    else if ( a < b) {
+      return 1;
     }
     else return 0;
 };

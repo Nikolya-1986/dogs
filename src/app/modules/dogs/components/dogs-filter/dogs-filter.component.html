@@ -1,26 +1,30 @@
-<section class="filter__wrapper filter">
-    <div class="filter__container">
-        <div class="filter__field field">
-            <label for="searchParametrs">
-                Search breed, singularity or country dog
-            </label>
-            <input
-                id="searchParametrs"
-                type="search"
-                placeholder="Enter breed, singularity or country dog..."
-                [formControl]="searchQuery"
-                aria-describedby="filter"
-            />
-        </div>
-        <div class="filter__field field">
-            <label for="searchParametrs">
-                Filter by
-            </label>
-            <select name="animal">
-                <option value="lion">Lion</option>
-                <option value="tiger">Tiger</option>
-                <option value="leopard">Leopard</option>
-            </select>
-        </div>
+<section class="filter__container filter">
+    <div class="filter__field field">
+        <label for="searchParametrs">
+            Search breed, singularity or country dog
+        </label>
+        <input
+            id="searchParametrs"
+            type="search"
+            placeholder="Enter breed, singularity or country dog..."
+            [formControl]="searchQuery"
+            aria-describedby="filter"
+        />
+    </div>
+    <div class="filter__field field">
+        <label for="searchParametrs">
+            Filter by
+        </label>
+        <select  
+            [formControl]="sortKeyForDogs" 
+            name="item"
+            >
+            <option
+                *ngFor="let item of filterNumberDogs"
+                [value]="item"
+                >
+                {{ item }}
+            </option>
+        </select>
     </div>
 </section>

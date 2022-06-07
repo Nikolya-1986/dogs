@@ -2,7 +2,7 @@
 {
     "dogs": [
         {
-            "id": "1fo3430-dfkl23-43fdgd",
+            "id": "1gfo3430-dfkl23-43fdgd",
             "breed": "Austrian hound",
             "country": "Austria",
             "singularity": "Devoted friends",
@@ -1042,11 +1042,11 @@
             },
             "age": 10,
             "images": [
+                "https://storage-api.petstory.ru/resize/0x0x70/02/38/97/023897c2202c4f5095e100d274eb2aa6.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/e1/b6/55/e1b655e5180a4c9f93bacaae5f50a10d.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/c3/81/e2/c381e2b1099d4a94b5d61165187e4788.jpeg",
                 "https://storage-api.petstory.ru/resize/0x0x70/1c/c7/75/1cc775dd42d14fb2aa1930596c6a6705.jpeg",
-                "https://storage-api.petstory.ru/resize/0x0x70/66/2b/48/662b48b3231d4c859d14254700e1d72a.jpeg",
-                "https://storage-api.petstory.ru/resize/0x0x70/02/38/97/023897c2202c4f5095e100d274eb2aa6.jpeg"
+                "https://storage-api.petstory.ru/resize/0x0x70/66/2b/48/662b48b3231d4c859d14254700e1d72a.jpeg"
             ],
             "description": {
                 "url": "http://localhost:3000/description/35fd6fghgf-ddgf"
