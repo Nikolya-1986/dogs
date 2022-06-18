@@ -7,6 +7,7 @@ import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO } from "../../interfaces/dog.interface";
+import { Body } from "src/app/interfaces/enums/body.enum";
 
 
 const _dogReduserInternal = createReducer(
@@ -18,7 +19,7 @@ const _dogReduserInternal = createReducer(
         ...state,
         dogs: [...state.dogs, ...action.dogs],
     })),
-    on(dogActions.setByFilter, (state, { filters }) => {
+    on(dogActions.setByFilterParams, (state, { filters }) => {
 
         let filteredDogs = [...state.dogs];
         const searchQueryForDog = filters.filterQuery;
@@ -40,7 +41,22 @@ const _dogReduserInternal = createReducer(
             filterBy: fiterByField,
         }
     }),
-    on(dogActions.setSortKey, (state, { sortKey }) => {
+    on(dogActions.setByFilterSize, (state, { filterSize }) => {
+        let dogs = [...state.dogs];
+        const currentSize = filterSize.parameterSize;
+        let currentSizeDods = currentSize === Body.All ? dogs : dogs.filter(item => item.size.body === currentSize);
+        return {
+            ...state,
+            dogs: [...currentSizeDods],
+            filterSize: {
+                parameterSize: currentSize,
+            }
+        }
+    }),
+
+
+    on(dogActions.setSortKey, (state, { sort }) => {
+        const sortKey = sort.sortKey;
         let sortedDogs = [...state.dogs].sort((
             a: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>, 
             b: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>
@@ -71,6 +87,12 @@ const _dogReduserInternal = createReducer(
             }
             if (sortKey === 'Weight(Small-big)') {
                 return compare(param_b_weight, param_a_weight);
+            }
+            if (sortKey === 'Country(Alphabet(Aa-Zz)') {
+                return compare(b.country, a.country)
+            }
+            if (sortKey === 'Country(Alphabet(Zz-Aa)') {
+                return compare(a.country, b.country)
             }
         })
         return {

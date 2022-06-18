@@ -23,11 +23,15 @@ export class DogStoreFacade {
     };
 
     public loadDogsByFilter(query: string): void {
-        this._dogStore.dispatch(dogActions.setByFilter( { filters: { filterBy: ['breed', 'country', 'singularity'], filterQuery: query }}));
+        this._dogStore.dispatch(dogActions.setByFilterParams( { filters: { filterBy: ['breed', 'country', 'singularity'], filterQuery: query }}));
+    };
+
+    public loadDogsByFilterSize(size: string): void {
+        this._dogStore.dispatch(dogActions.setByFilterSize( { filterSize: { parameterSize: size }}));
     };
 
     public loadDogsSortKey(sortKey: string): void {
-        this._dogStore.dispatch(dogActions.setSortKey({ sortKey }));
+        this._dogStore.dispatch(dogActions.setSortKey({ sort: { sortKey } }));
     };
 
     public loadPagination(pagination: { itemsPerPage: number; currentPage: number; count: number; pageSizes: number[] }): void {

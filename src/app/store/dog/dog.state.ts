@@ -7,7 +7,8 @@ import { DogDTO } from "../../interfaces/dog.interface";
 
 export interface DogState {
     dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[];
-    filtres: FilterState,
+    filterParams: FilterParamsState,
+    filterSize: FilterSizeState,
     sort: SortState,
     pagination: PaginationState,
 };
@@ -16,9 +17,13 @@ export interface SortState {
     sortKey: string;
 };
 
-export interface FilterState {
+export interface FilterParamsState {
     filterQuery: string;// строка для поиска
     filterBy: string[];// массив полей по которым необходимо искать
+};
+
+export interface FilterSizeState {
+    parameterSize: string;
 };
 
 export interface PaginationState {
@@ -30,9 +35,12 @@ export interface PaginationState {
 
 export const INITIAL_DOG_STATE: DogState = {
     dogs: [],
-    filtres: {
+    filterParams: {
         filterQuery: '',
         filterBy: [],
+    },
+    filterSize: {
+        parameterSize: '',
     },
     sort: {
         sortKey: '',

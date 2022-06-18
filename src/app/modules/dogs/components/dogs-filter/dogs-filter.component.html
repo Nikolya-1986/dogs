@@ -12,6 +12,25 @@
         />
     </div>
     <div class="filter__field field">
+        <label for="sortSize" >
+            Filter by size
+        </label>
+        <div class="filter__size">
+            <ng-container *ngFor="let item of bodySize">
+                <span>
+                    <input 
+                        type="radio" 
+                        [value]="item"
+                        id="sortSize"
+                        [formControl]="filterSize"
+                        />
+                        {{ item }}
+                </span>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="filter__field field">
         <label for="searchParametrs">
             Filter by
         </label>
