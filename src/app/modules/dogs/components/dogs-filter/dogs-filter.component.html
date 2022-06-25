@@ -12,7 +12,7 @@
         />
     </div>
     <div class="filter__field field">
-        <label for="sortSize" >
+        <label for="filterSize" >
             Filter by size
         </label>
         <div class="filter__size">
@@ -21,29 +21,47 @@
                     <input 
                         type="radio" 
                         [value]="item"
-                        id="sortSize"
+                        id="filterSize"
                         [formControl]="filterSize"
-                        />
-                        {{ item }}
+                    />
+                    {{ item }}
                 </span>
             </ng-container>
         </div>
     </div>
 
     <div class="filter__field field">
-        <label for="searchParametrs">
-            Filter by
+        <label for="sortParametrs">
+            Sorting by
         </label>
         <select  
             [formControl]="sortKeyForDogs" 
             name="item"
             >
             <option
-                *ngFor="let item of filterNumberDogs"
-                [value]="item"
+                *ngFor="let parametr of sortParaments"
+                [value]="parametr"
                 >
-                {{ item }}
+                {{ parametr }}
             </option>
         </select>
+    </div>
+
+    <div class="filter__field field">
+        <label for="filterSingularity">
+            Filter by singularity
+        </label>
+        <div class="filter__singularity">
+            <ng-container *ngFor="let singularity of singularities">
+                <span>
+                    <app-singularity
+                        [singularity]="singularity"
+                        [activeSingularity]="activeSingularity"
+                        (currentSingularity)="onCurrentSingularity($event)"
+                        >
+                    </app-singularity>
+                </span>
+            </ng-container>
+        </div>
     </div>
 </section>

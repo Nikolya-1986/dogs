@@ -3,7 +3,6 @@ import { BreedGroupDTO } from "./breed-group.iterface";
 import { DescriptionDTO } from "./description.interface";
 import { BodyEnumStrings } from "./enums/body.enum";
 import { CountryEnumStrings } from "./enums/country.enum";
-import { SingularityEnumStrings } from "./enums/singularity.enum";
 
 export interface DogsDTO {
     result: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>
@@ -13,7 +12,7 @@ export interface DogDTO<D, C, G> {
     id: string,
     breed: string,
     country: CountryEnumStrings,
-    singularity: SingularityEnumStrings,
+    singularity: Array<string>,
     size: Size,
     age: number,
     images: Array<string>,

@@ -5,7 +5,7 @@ import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO } from "../../interfaces/dog.interface";
-import { FilterParamsState, FilterSizeState, PaginationState, SortState } from "./dog.state";
+import { FilterParamsState, FilterSingularityState, FilterSizeState, PaginationState, SortState } from "./dog.state";
 
 
 export enum DogActionsType {
@@ -14,6 +14,7 @@ export enum DogActionsType {
     SET_FILTER_BY_PARAMS = '[Dog] Set filter by properties and query',
     SET_FILTER_BY_SIZE = '[Dog] set filter size',
     SET_SORT_KEY = '[Dog] Set sort key',
+    SET_FILTER_BY_SINGULARITY = '[Dog] Set filter singularity',
     SET_PAGINATION_PAGE = '[Dog] Set pagination pade',
     RESET_DOGS_STORE = '[Dog] Reset dogs store',
 };
@@ -40,6 +41,11 @@ export const setByFilterSize = createAction(
 export const setSortKey = createAction(
     DogActionsType.SET_SORT_KEY,
     props<{ sort: SortState }>(),
+);
+
+export const setFilterSingularity = createAction(
+    DogActionsType.SET_FILTER_BY_SINGULARITY,
+    props<{ filterSingularity: FilterSingularityState }>(),
 );
 
 export const setPaginationPage = createAction (

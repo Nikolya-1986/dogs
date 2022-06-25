@@ -10,7 +10,9 @@ import { BreedGroupDTO } from "../../../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../../../interfaces/description.interface";
 import { DogDTO } from "../../../../interfaces/dog.interface";
 import { Body } from "../../../../interfaces/enums/body.enum";
-import * as dogs from '../../dogs.constant';
+import { SingularityStoreFacade } from 'src/app/store/singularity/singularity.facade';
+import * as dogsConstant from '../../dogs.constant';
+
 
 @Component({
   selector: 'app-dogs-list',
@@ -20,12 +22,14 @@ import * as dogs from '../../dogs.constant';
 export class DogsListComponent implements OnInit, OnDestroy {
 
   public dogs$!: Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[] | any>;
+  public singularities$!: Observable<string[] | any>;
   public searchQuery = new FormControl('');
   public filterSize = new FormControl(Body.All);
-  public sortKeyForDogs = new FormControl('Default');
-  public pagination$!: any;
   public bodySize: Body[] = [Body.All, Body.Average, Body.Large, Body.Little];
-  public filterNumberDogs: string[] = JSON.parse(JSON.stringify(dogs.FILTER_NUMBER_DOGS));
+  public sortKeyForDogs = new FormControl('Default');
+  public sortParaments: string[] = JSON.parse(JSON.stringify(dogsConstant.SORT_PARAMETRS_DOGS));
+  public activeSingularity!: string;
+  public pagination$!: any;
   public currentPage: number = 1;
   public count: number = 0;
   public itemsPerPage: number = 8;
@@ -35,10 +39,12 @@ export class DogsListComponent implements OnInit, OnDestroy {
 
   constructor(
     private _dogStoreFacade: DogStoreFacade,
+    private _singularityStoreFacade: SingularityStoreFacade,
   ) { }
 
   public ngOnInit(): void {
     this._fetchDogs();
+    this._fetchSingularities();
     this._fetchPaginatoinPage();
   };
 
@@ -53,6 +59,11 @@ export class DogsListComponent implements OnInit, OnDestroy {
 
   public onCurrentPageChange(event: number): void {
     this.currentPage = event;
+  };
+
+  public onCurrentSingularity(singularity: string): void {
+    this.activeSingularity = singularity;
+    this._dogStoreFacade.loadDogsByFilterSingularity(singularity);
   };
 
   private _fetchPaginatoinPage(): void {
@@ -83,6 +94,16 @@ export class DogsListComponent implements OnInit, OnDestroy {
     })
   };
 
+  private _fetchSingularities(): void {
+    this._singularityStoreFacade.loadSingularities();
+    this.singularities$ = this._singularityStoreFacade.singularities$;
+    this.singularities$
+    .pipe(
+      takeUntil(this._destroy$),
+    )
+    .subscribe((singularities) => this.activeSingularity ? this.activeSingularity : this.activeSingularity = singularities[0])
+  };
+
   public ngOnDestroy(): void {
     this._dogStoreFacade.resetDogsFilter();
     this._destroy$.next(true);
@@ -90,19 +111,3 @@ export class DogsListComponent implements OnInit, OnDestroy {
   };
 
 }
-
-
-
-
-// You probably want to have an initial value for both Observables. combineLatest will only emit if all Observables have emitted at least one value. 
-//Use the startWith operator to create this behaviour, like this:
-
-// combineLatest(
-//     this.toppings.valueChanges.pipe(startWith("")), 
-//     this.toppings2.valueChanges.pipe(startWith("")))
-
-// Or, if you have initial values available, like suggested:
-
-// combineLatest(
-//     this.toppings.valueChanges.pipe(startWith(this.toppings.value)), 
-//     this.toppings2.valueChanges.pipe(startWith(this.toppings2.value)))

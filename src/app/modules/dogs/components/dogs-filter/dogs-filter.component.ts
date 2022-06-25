@@ -11,14 +11,21 @@ export class DogsFilterComponent implements OnInit {
 
   @Input() public searchQuery = new FormControl;
   @Input() public filterSize = new FormControl;
-  @Input() public sortKeyForDogs = new FormControl;
-  @Input() public filterNumberDogs!: string[];
   @Input() public bodySize!: Body[];
- 
+  @Input() public sortKeyForDogs = new FormControl;
+  @Input() public sortParaments!: string[];
+  @Input() public singularities!: Array<string>;
+  @Input() public activeSingularity!: string;
+  @Output() public currentSingularity = new EventEmitter<string>();
+
   constructor() { }
 
   public ngOnInit(): void {
+    
   };
 
+  public onCurrentSingularity(singularity: string): void {
+    this.currentSingularity.emit(singularity);
+  }
 
 }

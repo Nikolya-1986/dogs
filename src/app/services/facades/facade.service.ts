@@ -1,7 +1,7 @@
 import { Injectable, Injector } from "@angular/core";
 import { DogService } from "../dog.service";
 import { ErrorService } from "../error.service";
-import { catchError, delay, Observable, retry } from "rxjs";
+import { catchError, delay, map, Observable, retry } from "rxjs";
 
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
@@ -41,6 +41,21 @@ export class FacadeService {
             retry(3),
             catchError(this.errorService.errorsBackend.bind(this)),
         )
+    };
+
+    public getSingularities(): Observable<string[]> {
+        return this.getDogs().pipe(
+            map((dogs) => this._uniqueSingularities(dogs)),
+        )
+    };
+
+    private _uniqueSingularities(dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[]): string[] {
+        const singularities = dogs.map((response) => response.singularity);
+        const uniqueSingularities = singularities.reduce((acc, item) => {
+            const onlyUnique = [...new Set(acc.concat(item))];
+            return onlyUnique;
+        });
+        return uniqueSingularities;
     };
 
 }

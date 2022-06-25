@@ -10,6 +10,7 @@ import { DogsItemComponent } from './components/dogs-item/dogs-item.component';
 import { DogsCardComponent } from './components/dogs-card/dogs-card.component';
 import { DogsFilterComponent } from './components/dogs-filter/dogs-filter.component';
 import { DogsPaginationComponent } from './components/dogs-pagination/dogs-pagination.component';
+import { SingularityComponent } from './components/dogs-filter/components/singularity/singularity.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { DogsPaginationComponent } from './components/dogs-pagination/dogs-pagin
     DogsCardComponent,
     DogsFilterComponent,
     DogsPaginationComponent,
+    SingularityComponent,
 
   ],
   imports: [

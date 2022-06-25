@@ -53,8 +53,6 @@ const _dogReduserInternal = createReducer(
             }
         }
     }),
-
-
     on(dogActions.setSortKey, (state, { sort }) => {
         const sortKey = sort.sortKey;
         let sortedDogs = [...state.dogs].sort((
@@ -103,6 +101,30 @@ const _dogReduserInternal = createReducer(
             },
         }
     }),
+    on(dogActions.setFilterSingularity, (state, { filterSingularity }) => {
+        const dogs = [...state.dogs];
+        const singularity = filterSingularity.singularity;
+        const dogsSingularity = dogs.filter((dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>) => {
+            if(singularity === 'All Singularity') {
+                return dogs;
+            } 
+            else {
+                const singularities = dogs.singularity;
+                const isIncludesSingularity = singularities.includes(singularity);
+                return isIncludesSingularity;
+            }
+        })
+        
+        return {
+            ...state,
+            dogs: [...dogsSingularity],
+            filterSingularity: {
+                singularity: singularity,
+            }
+        }
+    }),
+
+
     on(dogActions.setPaginationPage, (state, { pagination }) => {
         return {
             ...state,

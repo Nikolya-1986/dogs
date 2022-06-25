@@ -34,6 +34,10 @@ export class DogStoreFacade {
         this._dogStore.dispatch(dogActions.setSortKey({ sort: { sortKey } }));
     };
 
+    public loadDogsByFilterSingularity(singularity: string): void {
+        this._dogStore.dispatch(dogActions.setFilterSingularity({ filterSingularity: { singularity }}));
+    };
+
     public loadPagination(pagination: { itemsPerPage: number; currentPage: number; count: number; pageSizes: number[] }): void {
         this._dogStore.dispatch(dogActions.setPaginationPage( { pagination }))
     };

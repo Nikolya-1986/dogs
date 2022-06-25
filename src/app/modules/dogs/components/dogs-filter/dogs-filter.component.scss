@@ -9,11 +9,14 @@
     &__size {
         display: flex;
         flex-direction: row;
-
-        span {
-            margin-right: 1rem;
-        }
     }
 
+    &__singularity {
+        display: flex;
+        padding-top: .5rem;
+    }
 
+    span {
+        margin-right: 1rem;
+    }
 }

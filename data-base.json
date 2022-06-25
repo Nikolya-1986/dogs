@@ -5,7 +5,7 @@
             "id": "1gfo3430-dfkl23-43fdgd",
             "breed": "Austrian hound",
             "country": "Austria",
-            "singularity": "Devoted friends",
+            "singularity": ["Devoted friends", "Natural born hunters"],
             "size": {
                 "body": "Average",
                 "weight": "15–22",
@@ -34,7 +34,7 @@
             "id": "2gfgfdg-ghjghj5fjs-hjfd[76",
             "breed": "Alabai",
             "country": "Austria",
-            "singularity": "Natural born hunters",
+            "singularity": ["Resourceful", "Natural born hunters"],
             "size": {
                 "body": "Large",
                 "weight": "40-80",
@@ -62,7 +62,7 @@
             "id": "3plhg[-sdjf]b.mfd-sdfzaq[",
             "breed": "Alpine Dachshund Hound",
             "country": "Austria",
-            "singularity": "Resourceful",
+            "singularity": ["Resourceful", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "15–18",
@@ -91,7 +91,7 @@
             "id": "4dfp,sd-repksmd-34kg;fs3",
             "breed":"English bulldog",
             "country": "United Kingdom",
-            "singularity": "Curious",
+            "singularity": ["Curious", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "20–25",
@@ -119,7 +119,7 @@
             "id": "5gfhf-87hjkhdf-tdrewhgm65",
             "breed":"English mastiff",
             "country": "United Kingdom",
-            "singularity": "Resourceful",
+            "singularity": ["Resourceful", "Devoted friends"],
             "size": {
                 "body": "Large",
                 "weight": "70–90",
@@ -149,7 +149,7 @@
             "id": "6fghfhj-hgjghsf-fhjhfj",
             "breed":"English Springer Spaniel",
             "country": "United Kingdom",
-            "singularity": "Natural born hunters",
+            "singularity": ["Natural born hunters", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "20–25",
@@ -179,7 +179,7 @@
             "id": "7fghf-7896df-fghf",
             "breed":"Appenzeller Sennenhund",
             "country": "Switzerland",
-            "singularity": "Devoted friends",
+            "singularity": ["Curious", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "22–32",
@@ -209,7 +209,7 @@
             "id": "8fdghgj-5ehgfgh05",
             "breed":"Agentino dog",
             "country": "Argentina",
-            "singularity": "Aggressive",
+            "singularity": ["Aggressive", "Guard"],
             "size": {
                 "body": "Average",
                 "weight": "22–32",
@@ -239,7 +239,7 @@
             "id": "9dgfd-5645df76-gh",
             "breed":"Artesian-Norman Basset",
             "country": "France",
-            "singularity": "Devoted friends",
+            "singularity": ["Resourceful", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "22–32",
@@ -269,7 +269,7 @@
             "id": "10fhjf-ghgfh45hgjkh-gh",
             "breed":"Aussie",
             "country": "USA",
-            "singularity": "Curious",
+            "singularity": ["Resourceful", "Curious"],
             "size": {
                 "body": "Large",
                 "weight": "22–30",
@@ -298,7 +298,7 @@
             "id": "11fdg-gfh45fhjfgjd",
             "breed":"Bavarian mountain hound",
             "country": "Germany",
-            "singularity": "Devoted friends",
+            "singularity": ["Resourceful", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "20–25",
@@ -326,7 +326,7 @@
             "id": "12dfgh-67fghgh-645gf",
             "breed":"Basset hound",
             "country": "England",
-            "singularity": "Resourceful",
+            "singularity": ["Curious", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "18–25",
@@ -358,7 +358,7 @@
             "id": "13fdgh-tfh9sefjk",
             "breed":"Belgian Shepherd",
             "country": "Belgium",
-            "singularity": "Natural born hunters",
+            "singularity": ["Guard", "Devoted friends"],
             "size": {
                 "body": "Large",
                 "weight": "25–35",
@@ -386,7 +386,7 @@
             "id": "14fhghfj-fthfgh-56",
             "breed":"Belgian mastiff",
             "country": "Belgium",
-            "singularity": "Aggressive",
+            "singularity": ["Guard", "Aggressive"],
             "size": {
                 "body": "Large",
                 "weight": "35–60",
@@ -415,7 +415,7 @@
             "id": "15fghfhj-ytryrt76s",
             "breed":"Bergamasco Shepherd",
             "country": "Italy",
-            "singularity": "Devoted friends",
+            "singularity": ["Guard", "Devoted friends"],
             "size": {
                 "body": "Large",
                 "weight": "26–38",
@@ -446,7 +446,7 @@
             "id": "16ghgfh-eyt56kh0",
             "breed":"Bernese Mountain Dog",
             "country": "Switzerland",
-            "singularity": "Curious",
+            "singularity": ["Guard", "Curious"],
             "size": {
                 "body": "Large",
                 "weight": "35-50",
@@ -477,7 +477,7 @@
             "id": "17hjgf-gffgfgkj",
             "breed":"Beagle",
             "country": "United Kingdom",
-            "singularity": "Natural born hunters",
+            "singularity": ["Guard", "Natural born hunters", "Resourceful"],
             "size": {
                 "body": "Average",
                 "weight": "10–15",
@@ -511,7 +511,7 @@
             "id": "18hjkh-dfgd65",
             "breed":"Welsh corgi",
             "country": "United Kingdom",
-            "singularity": "Devoted friends",
+            "singularity": ["Guard", "Natural born hunters", "Resourceful"],
             "size": {
                 "body": "Little",
                 "weight": "25,5–30",
@@ -541,7 +541,7 @@
             "id": "19fg-fdgdfg6-fg",
             "breed":"Pembroke Welsh Corgi",
             "country": "Austria",
-            "singularity": "Devoted friends",
+            "singularity": ["Guard", "Natural born hunters", "Resourceful"],
             "size": {
                 "body": "Little",
                 "weight": "25,5–30",
@@ -571,7 +571,7 @@
             "id": "20asooo[vns-45hgjgh",
             "breed":"Dutch shepherd",
             "country": "Holland",
-            "singularity": "Curious",
+            "singularity": ["Guard", "Curious"],
             "size": {
                 "body": "Large",
                 "weight": "23–32",
@@ -601,7 +601,7 @@
             "id": "21ghfgh-dfgd65hj-f",
             "breed":"Jack Russell Terrier",
             "country": "England",
-            "singularity": "Devoted friends",
+            "singularity": ["Guard", "Devoted friends"],
             "size": {
                 "body": "Little",
                 "weight": "5–8",
@@ -630,7 +630,7 @@
             "id": "22sdkl-dgsdfs43j;l",
             "breed":"Doberman",
             "country": "Germany",
-            "singularity": "Natural born hunters",
+            "singularity": ["Natural born hunters", "Devoted friends"],
             "size": {
                 "body": "Large",
                 "weight": "30–40",
@@ -664,7 +664,7 @@
             "id": "23sdgdfg-fdfd587kl",
             "breed":"Caucasian Shepherd Dog",
             "country": "Austria",
-            "singularity": "Curious",
+            "singularity": ["Curious", "Devoted friends"],
             "size": {
                 "body": "Large",
                 "weight": "45–75",
@@ -694,7 +694,7 @@
             "id": "24kl;df8-45gfffgdf",
             "breed":"Labrador Retriever",
             "country": "Canada",
-            "singularity": "Devoted friends",
+            "singularity": ["Resourceful", "Devoted friends"],
             "size": {
                 "body": "Average",
                 "weight": "30–45",
@@ -726,7 +726,7 @@
             "id": "25a;hjkvb-rtfg43g",
             "breed":"Lhasa apso",
             "country": "Tibet",
-            "singularity": "Resourceful",
+            "singularity": ["Resourceful"],
             "size": {
                 "body": "Little",
                 "weight": "6–7",
@@ -753,7 +753,7 @@
             "id": "26asljhp08ghj-gffg",
             "breed":"Manchester Terrier",
             "country": "United Kingdom",
-            "singularity": "Devoted friends",
+            "singularity": ["Devoted friends"],
             "size": {
                 "body": "Little",
                 "weight": "2,5–3,5",
@@ -782,7 +782,7 @@
             "id": "27[uinbse-fd435",
             "breed":"Pug",
             "country": "China",
-            "singularity": "Curious",
+            "singularity": ["Curious", "Guard"],
             "size": {
                 "body": "Little",
                 "weight": "6,3–8,1",
@@ -810,7 +810,7 @@
             "id": "28fgh-hjghj45-hlkhj",
             "breed":"German Shepherd",
             "country": "Germany",
-            "singularity": "Natural born hunters",
+            "singularity": ["Natural born hunters", "Resourceful"],
             "size": {
                 "body": "Large",
                 "weight": "25–40",
@@ -841,7 +841,7 @@
             "id": "29dfh-43gfhfh8",
             "breed":"Pekingese",
             "country": "China",
-            "singularity": "Curious",
+            "singularity": ["Curious"],
             "size": {
                 "body": "Little",
                 "weight": "3-5",
@@ -872,7 +872,7 @@
             "id": "30hkl-fg647gjghj",
             "breed":"Pomeranian",
             "country": "Germany",
-            "singularity": "Curious",
+            "singularity": ["Curious", "Devoted friends"],
             "size": {
                 "body": "Little",
                 "weight": "2-3",
@@ -905,7 +905,7 @@
             "id": "31fdgd-hgjgh6556",
             "breed":"Poodle",
             "country": "Austria",
-            "singularity": "Natural born hunters",
+            "singularity": ["Natural born hunters", "Curious"],
             "size": {
                 "body": "Average",
                 "weight": "10-12",
@@ -937,7 +937,7 @@
             "id": "32fgh0-dsfg65gfhj",
             "breed":"Rottweiler",
             "country": "Germany",
-            "singularity": "Aggressive",
+            "singularity": ["Aggressive", "Guard"],
             "size": {
                 "body": "Little",
                 "weight": "42–50",
@@ -974,7 +974,7 @@
             "id": "33fdgfh-ghjh43;ls",
             "breed":"Shiba Inu (Shiba Inu)",
             "country": "Japan",
-            "singularity": "Resourceful",
+            "singularity": ["Resourceful", "Curious"],
             "size": {
                 "body": "Average",
                 "weight": "8–12",
@@ -1004,7 +1004,7 @@
             "id": "34fghf-hjkfdh56olj-fg",
             "breed":"Dachshund",
             "country": "Germany",
-            "singularity": "Natural born hunters",
+            "singularity": ["Natural born hunters"],
             "size": {
                 "body": "Little",
                 "weight": "8–12",
@@ -1034,7 +1034,7 @@
             "id": "35fghgfh-435gfghfg",
             "breed":"Tibetan mastiff",
             "country": "Tibet",
-            "singularity": "Natural born hunters",
+            "singularity": ["Natural born hunters", "Guard"],
             "size": {
                 "body": "Large",
                 "weight": "75–95",
@@ -1067,7 +1067,7 @@
             "id": "36sdf-fg435dghf",
             "breed":"Chow chow",
             "country": "China",
-            "singularity": "Curious",
+            "singularity": ["Curious", "Resourceful"],
             "size": {
                 "body": "Average",
                 "weight": "23-32",

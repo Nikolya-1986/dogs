@@ -4,9 +4,12 @@
         <app-dogs-filter
             [searchQuery]="searchQuery"
             [filterSize]="filterSize"
-            [filterNumberDogs]="filterNumberDogs"
+            [sortParaments]="sortParaments"
+            [singularities]="singularities$ | async"
+            [activeSingularity]="activeSingularity"
             [sortKeyForDogs]="sortKeyForDogs"
             [bodySize]="bodySize"
+            (currentSingularity)="onCurrentSingularity($event)"
             >
         </app-dogs-filter>
     </section>
@@ -19,7 +22,6 @@
             (currentCountPageSize)="onCurrentCountPageSize($event)"
             (currentPageChange)="onCurrentPageChange($event)"
             >
-
         </app-dogs-pagination>
     </section>
 

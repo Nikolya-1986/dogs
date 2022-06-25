@@ -10,6 +10,7 @@ export interface DogState {
     filterParams: FilterParamsState,
     filterSize: FilterSizeState,
     sort: SortState,
+    filterSingularity: FilterSingularityState;
     pagination: PaginationState,
 };
 
@@ -24,6 +25,10 @@ export interface FilterParamsState {
 
 export interface FilterSizeState {
     parameterSize: string;
+};
+
+export interface FilterSingularityState {
+    singularity: string;
 };
 
 export interface PaginationState {
@@ -44,6 +49,9 @@ export const INITIAL_DOG_STATE: DogState = {
     },
     sort: {
         sortKey: '',
+    },
+    filterSingularity: {
+        singularity: '',
     },
     pagination: {
         itemsPerPage: 0,
