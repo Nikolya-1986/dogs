@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, OnInit,  } from '@angular/core';
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, OnInit, Output,  } from '@angular/core';
 
 import { CompetitionsDTO } from "../../../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../../../interfaces/breed-group.iterface";
@@ -20,7 +19,11 @@ export class DogsCardComponent implements OnInit {
   @Input() dog!: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>;
   @Input() public rotated: string = 'default';
   @Input() public scale: string = "rest";  
-  
+  @Input() public like!: string;
+  @Input() public dislike!: string;
+  @Output() public increaseRating = new EventEmitter<string>();
+  @Output() public decreaseRating = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -34,5 +37,13 @@ export class DogsCardComponent implements OnInit {
   public scaleImage(state:string) :void {  
     this.scale = state;  
   }; 
+
+  public onIncreaseRating(id: string): void {
+    this.increaseRating.emit(id)
+  };
+
+  public onDecreaseRating(id: string): void {
+    this.decreaseRating.emit(id)
+  }
 
 }

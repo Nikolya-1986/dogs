@@ -42,6 +42,10 @@ export class DogStoreFacade {
         this._dogStore.dispatch(dogActions.setPaginationPage( { pagination }))
     };
 
+    public loadIncreaseRating(id : string) :void {
+        this._dogStore.dispatch(dogActions.increaseDogRating({ id }))
+    };
+
     public resetDogsFilter(): void {
         this._dogStore.dispatch(dogActions.resetDogsStore());
     };

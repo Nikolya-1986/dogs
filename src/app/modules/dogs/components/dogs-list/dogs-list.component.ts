@@ -34,6 +34,8 @@ export class DogsListComponent implements OnInit, OnDestroy {
   public count: number = 0;
   public itemsPerPage: number = 8;
   public pageSizes = [8, 16, 24, 32, 36];
+  public like: string = 'assets/images/like.png';
+  public dislike: string = 'assets/images/dislike.png';
 
   private _destroy$: Subject<boolean> = new Subject();
 
@@ -46,6 +48,12 @@ export class DogsListComponent implements OnInit, OnDestroy {
     this._fetchDogs();
     this._fetchSingularities();
     this._fetchPaginatoinPage();
+  };
+
+  public ngOnDestroy(): void {
+    this._dogStoreFacade.resetDogsFilter();
+    this._destroy$.next(true);
+    this._destroy$.complete();
   };
 
   public trackByFn(ind: number, item: any): number {
@@ -63,7 +71,15 @@ export class DogsListComponent implements OnInit, OnDestroy {
 
   public onCurrentSingularity(singularity: string): void {
     this.activeSingularity = singularity;
-    this._dogStoreFacade.loadDogsByFilterSingularity(singularity);
+    this._dogStoreFacade.loadDogsByFilterSingularity(this.activeSingularity);
+  };
+
+  public onIncreaseRaiting(id: string): void {
+    this._dogStoreFacade.loadIncreaseRating(id);
+  };
+ 
+  public onDecreaseRating(id: string): void {
+    // this._dogStoreFacade.loadDislikeRaiting(id);
   };
 
   private _fetchPaginatoinPage(): void {
@@ -101,13 +117,12 @@ export class DogsListComponent implements OnInit, OnDestroy {
     .pipe(
       takeUntil(this._destroy$),
     )
-    .subscribe((singularities) => this.activeSingularity ? this.activeSingularity : this.activeSingularity = singularities[0])
-  };
-
-  public ngOnDestroy(): void {
-    this._dogStoreFacade.resetDogsFilter();
-    this._destroy$.next(true);
-    this._destroy$.complete();
+    .subscribe((singularities) => {
+      if(!this.activeSingularity) {
+        this.activeSingularity = singularities[0];
+        this.onCurrentSingularity(this.activeSingularity);
+      }
+    })
   };
 
 }

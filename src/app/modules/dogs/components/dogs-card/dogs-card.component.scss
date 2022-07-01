@@ -26,4 +26,27 @@
     position: relative;
     padding: 0 10px;
   }
+
+  &__footer {
+    height: auto;
+    padding: 0 10px;
+  }
+
+  &__raiting {
+    display: flex;
+
+    a {
+      width: 15%;
+    }
+
+    img {
+      width: 40%;
+      height: 60%;
+    }
+
+    span {
+      font-size: 1.3rem;
+      align-items: flex-start;
+    }
+  }
 }

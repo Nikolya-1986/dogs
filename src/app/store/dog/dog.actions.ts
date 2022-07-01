@@ -11,12 +11,17 @@ import { FilterParamsState, FilterSingularityState, FilterSizeState, PaginationS
 export enum DogActionsType {
     LOAD_DOGS_REQUEST = '[Dog] Load dogs request',
     LOAD_DOGS_SUCCESS = '[Dog] Load dogs success',
+
     SET_FILTER_BY_PARAMS = '[Dog] Set filter by properties and query',
     SET_FILTER_BY_SIZE = '[Dog] set filter size',
     SET_SORT_KEY = '[Dog] Set sort key',
     SET_FILTER_BY_SINGULARITY = '[Dog] Set filter singularity',
     SET_PAGINATION_PAGE = '[Dog] Set pagination pade',
     RESET_DOGS_STORE = '[Dog] Reset dogs store',
+
+    INCREASE_DOG_RATING = '[Dog] Increase dog rating',
+    DECREASE_DOG_RATING = '[Dog] Decrease dog rating',
+    UPDATE_DOG_RATING = '[Dog] Update dog raring',
 };
 
 export const loadDogsRequest = createAction(
@@ -57,14 +62,34 @@ export const resetDogsStore = createAction (
     DogActionsType.RESET_DOGS_STORE,
 );
 
+export const increaseDogRating = createAction(
+    DogActionsType.INCREASE_DOG_RATING,
+    props<{ id: string }>(),
+);
+
+export const decreaseDogRating = createAction(
+    DogActionsType.DECREASE_DOG_RATING,
+    props<{ id: string }>(),
+);
+
+export const updateDogRaring = createAction(
+    DogActionsType.UPDATE_DOG_RATING,
+    props<{ rating: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> }>(),
+);
+
 const allDogAction = union({
     loadDogsRequest,
     loadDogsSuccess,
+    
     setByFilterParams,
     setByFilterSize,
     setSortKey,
     setPaginationPage,
     resetDogsStore,
+
+    increaseDogRating,
+    decreaseDogRating,
+    updateDogRaring,
 });
 
 export type DogAction = typeof allDogAction;

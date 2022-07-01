@@ -5,12 +5,12 @@ import { DogState } from "./dog.state";
 
 export const DOG_STATE_NAME = 'dog';
 
-const getSDogState = createFeatureSelector<DogState>(DOG_STATE_NAME);
+const getDogState = createFeatureSelector<DogState>(DOG_STATE_NAME);
 
-export const getDogs = createSelector(getSDogState,
+export const getDogs = createSelector(getDogState,
     (state: DogState) => state.dogs,
 );
 
-export const getPagination = createSelector(getSDogState,
+export const getPagination = createSelector(getDogState,
     (state: DogState) => state.pagination,
 )

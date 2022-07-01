@@ -17,6 +17,7 @@ import { CustomSerializer } from './store/router/custom-serializer';
 import { DogEffects } from './store/dog/dog.effects';
 import { SingularityEffect } from './store/singularity/singularity.effects';
 
+
 @NgModule({
   declarations: [
     AppComponent,

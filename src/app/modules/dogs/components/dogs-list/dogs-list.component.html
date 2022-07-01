@@ -37,6 +37,10 @@
             >
             <app-dogs-card
                 [dog]="dog"
+                [like]="like"
+                [dislike]="dislike"
+                (increaseRating)="onIncreaseRaiting($event)"
+                (decreaseRating)="onDecreaseRating($event)"
                 >
             </app-dogs-card>
         </ng-container>

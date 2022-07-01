@@ -7,11 +7,18 @@ import { DogDTO } from "../../interfaces/dog.interface";
 
 export interface DogState {
     dogs: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[];
+    rating: RatingState,
     filterParams: FilterParamsState,
     filterSize: FilterSizeState,
     sort: SortState,
     filterSingularity: FilterSingularityState;
     pagination: PaginationState,
+};
+
+export interface RatingState {
+    title: string,
+    likes: number;
+    dislikes: number;
 };
 
 export interface SortState {
@@ -40,6 +47,11 @@ export interface PaginationState {
 
 export const INITIAL_DOG_STATE: DogState = {
     dogs: [],
+    rating: {
+        title: "",
+        likes: 0,
+        dislikes: 0
+    },
     filterParams: {
         filterQuery: '',
         filterBy: [],
@@ -58,7 +70,7 @@ export const INITIAL_DOG_STATE: DogState = {
         currentPage: 0,
         count: 0,
         pageSizes: [],
-    }
+    },
 };
 
 export default interface DefaultDogState {

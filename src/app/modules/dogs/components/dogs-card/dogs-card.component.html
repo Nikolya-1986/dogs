@@ -10,7 +10,7 @@
       <img 
         [@rotatedImageState]='rotated' 
         [src]="dog.images[0]" 
-        class="card__image"
+        class="card__image" 
       />
     </div>
   </div>
@@ -29,7 +29,6 @@
       <li>
         Life long: {{ dog.age }}
       </li>
-
       <li>
         Size: {{ dog.size.body }}
       </li>
@@ -39,6 +38,25 @@
       <li>
         Weight: {{ dog.size.weight }} kilogram
       </li>
+      <li>
+        Rating: {{ dog.rating.title }}
+      </li>
     </ul>
+  </div>
+  <div class="card__footer">
+    <div class="card__raiting">
+      <a (click)="onIncreaseRating(dog.id)">
+        <img [src]="like">
+        <span>
+          {{ dog.rating.likes }}
+        </span> 
+      </a>
+      <a (click)="onDecreaseRating(dog.id)">
+        <img [src]="dislike">
+        <span>
+          {{ dog.rating.dislikes }}
+        </span> 
+      </a>
+    </div>
   </div>
 </section>

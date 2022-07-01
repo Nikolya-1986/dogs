@@ -6,7 +6,7 @@ import { catchError, delay, map, Observable, retry } from "rxjs";
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
-import { DogDTO } from "../../interfaces/dog.interface";
+import { DogDTO, Rating } from "../../interfaces/dog.interface";
 
 
 @Injectable({
@@ -46,6 +46,12 @@ export class FacadeService {
     public getSingularities(): Observable<string[]> {
         return this.getDogs().pipe(
             map((dogs) => this._uniqueSingularities(dogs)),
+        )
+    };
+
+    public getLikeRating(id :string): Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>> {
+        return this.dogService.getLikeRating(id).pipe(
+            catchError(this.errorService.errorsBackend.bind(this)),
         )
     };
 

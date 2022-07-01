@@ -19,6 +19,7 @@ export interface DogDTO<D, C, G> {
     description: D,
     competitions: C,
     breedGroup: G,
+    rating: Rating,
 };
 
 export interface Size {
@@ -26,3 +27,10 @@ export interface Size {
     weight: string,
     height: string,
 };
+
+export interface Rating {
+    title: string,
+    likes: number;
+    dislikes: number;
+};
+

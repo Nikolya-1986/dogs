@@ -19,6 +19,7 @@ const _dogReduserInternal = createReducer(
         ...state,
         dogs: [...state.dogs, ...action.dogs],
     })),
+
     on(dogActions.setByFilterParams, (state, { filters }) => {
 
         let filteredDogs = [...state.dogs];
@@ -134,10 +135,23 @@ const _dogReduserInternal = createReducer(
     on(dogActions.resetDogsStore, (state) => ({
         ...state,
         ...dogState.INITIAL_DOG_STATE,
-    }))
+    })),
+
+    on(dogActions.increaseDogRating, (state, { id }) => ({
+        ...state,
+        likes: state.rating.likes + 1,
+    })),
+    on(dogActions.decreaseDogRating, (state, { id }) => ({
+        ...state,
+        dislikes: state.rating.dislikes + 1,
+    })),
+    on(dogActions.updateDogRaring, (state, { rating }) => ({
+        ...state,
+        [rating.id]: rating,
+    })),
 );
 
-export function compare(a: number | string, b: number | string) {
+export function compare(a: number | string, b: number | string): number | string {
 
     if (a > b) {
       return -1;
