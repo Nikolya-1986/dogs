@@ -17,8 +17,8 @@ export interface DogState {
 
 export interface RatingState {
     title: string,
-    likes: number;
-    dislikes: number;
+    like: number;
+    dislike: number;
 };
 
 export interface SortState {
@@ -49,8 +49,8 @@ export const INITIAL_DOG_STATE: DogState = {
     dogs: [],
     rating: {
         title: "",
-        likes: 0,
-        dislikes: 0
+        like: 0,
+        dislike: 0
     },
     filterParams: {
         filterQuery: '',

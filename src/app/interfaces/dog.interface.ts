@@ -30,7 +30,7 @@ export interface Size {
 
 export interface Rating {
     title: string,
-    likes: number;
-    dislikes: number;
+    like: number;
+    dislike: number;
 };
 

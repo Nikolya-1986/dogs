@@ -39,11 +39,15 @@ export class DogStoreFacade {
     };
 
     public loadPagination(pagination: { itemsPerPage: number; currentPage: number; count: number; pageSizes: number[] }): void {
-        this._dogStore.dispatch(dogActions.setPaginationPage( { pagination }))
+        this._dogStore.dispatch(dogActions.setPaginationPage( { pagination }));
     };
 
-    public loadIncreaseRating(id : string) :void {
-        this._dogStore.dispatch(dogActions.increaseDogRating({ id }))
+    public loadIncreaseRating(id : string): void {
+        this._dogStore.dispatch(dogActions.increaseDogRating({ id }));
+    };
+
+    public loadDislikeRaiting(id: string): void {
+        this._dogStore.dispatch(dogActions.decreaseDogRating({ id }));
     };
 
     public resetDogsFilter(): void {

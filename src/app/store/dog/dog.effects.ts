@@ -1,7 +1,7 @@
 import { Injectable } from "@angular/core";
 import { Actions, createEffect, ofType } from "@ngrx/effects";
 import { Action } from "@ngrx/store";
-import { catchError, exhaustMap, map, Observable, of, switchMap, tap } from "rxjs";
+import { catchError, exhaustMap, map, mergeMap, Observable, of, switchMap, tap } from "rxjs";
 
 import { FacadeService } from "../../services/facades/facade.service";
 import * as sharedActions from '../shared/shared.actions';
@@ -32,19 +32,19 @@ export class DogEffects {
         { useEffectsErrorHandler: false }
     );
 
-    increaseRating$: Observable<Action> = createEffect(() => this._actions$
-        .pipe(
-            ofType(dogActions.DogActionsType.INCREASE_DOG_RATING),
-            switchMap(({ id }) => this._facadeService.getLikeRating(id)
-                .pipe(
-                    map(rating => dogActions.updateDogRaring({ rating })),
-                    tap((response) => console.log(response.rating.rating.likes)),
-                    catchError((error) => of(sharedActions.setErrorMessage(error)))
-                )
-            )
-        ),
-        { useEffectsErrorHandler: false }
-    );
+    // increaseRating$: Observable<Action> = createEffect(() => this._actions$
+    //     .pipe(
+    //         ofType(dogActions.DogActionsType.INCREASE_DOG_RATING),
+    //         switchMap(({ id }) => this._facadeService.getLikeRating(id)
+    //             .pipe(
+    //                 map(dog => dogActions.updateDogRaring({ rating: { title: dog.rating.title, like: dog.rating.like, dislike: dog.rating.dislike } })),
+    //                 tap((response) => console.log(response.rating.like)),
+    //                 catchError((error) => of(sharedActions.setErrorMessage(error)))
+    //             )
+    //         )
+    //     ),
+    //     { useEffectsErrorHandler: false }
+    // );
 
     constructor(
         private _actions$: Actions,

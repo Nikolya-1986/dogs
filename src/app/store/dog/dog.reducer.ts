@@ -137,17 +137,31 @@ const _dogReduserInternal = createReducer(
         ...dogState.INITIAL_DOG_STATE,
     })),
 
-    on(dogActions.increaseDogRating, (state, { id }) => ({
-        ...state,
-        likes: state.rating.likes + 1,
-    })),
+    on(dogActions.increaseDogRating, (state, { id }) => {
+        const like = state.rating.like;
+        console.log(like); 
+        
+        return {
+            ...state,
+            rating: {
+                title: '',
+                like: state.rating.like ++,
+                dislike: state.rating.dislike,
+            }
+        }
+
+    }),
     on(dogActions.decreaseDogRating, (state, { id }) => ({
         ...state,
-        dislikes: state.rating.dislikes + 1,
+        rating: {
+            title: '',
+            like: state.rating.like,
+            dislike: state.rating.dislike ++,
+        }
     })),
     on(dogActions.updateDogRaring, (state, { rating }) => ({
         ...state,
-        [rating.id]: rating,
+        rating: rating,
     })),
 );
 

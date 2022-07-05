@@ -4,7 +4,7 @@ import { createAction, props, union } from "@ngrx/store";
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
-import { DogDTO } from "../../interfaces/dog.interface";
+import { DogDTO, Rating } from "../../interfaces/dog.interface";
 import { FilterParamsState, FilterSingularityState, FilterSizeState, PaginationState, SortState } from "./dog.state";
 
 
@@ -74,7 +74,7 @@ export const decreaseDogRating = createAction(
 
 export const updateDogRaring = createAction(
     DogActionsType.UPDATE_DOG_RATING,
-    props<{ rating: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> }>(),
+    props<{ rating: Rating }>(),
 );
 
 const allDogAction = union({

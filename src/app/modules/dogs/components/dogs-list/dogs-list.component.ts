@@ -74,12 +74,12 @@ export class DogsListComponent implements OnInit, OnDestroy {
     this._dogStoreFacade.loadDogsByFilterSingularity(this.activeSingularity);
   };
 
-  public onIncreaseRaiting(id: string): void {
+  public onIncreaseRaiting(id: string): void { 
     this._dogStoreFacade.loadIncreaseRating(id);
   };
  
   public onDecreaseRating(id: string): void {
-    // this._dogStoreFacade.loadDislikeRaiting(id);
+    this._dogStoreFacade.loadDislikeRaiting(id);
   };
 
   private _fetchPaginatoinPage(): void {

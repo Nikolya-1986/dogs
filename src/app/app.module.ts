@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +16,7 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
 import { CustomSerializer } from './store/router/custom-serializer';
 import { DogEffects } from './store/dog/dog.effects';
 import { SingularityEffect } from './store/singularity/singularity.effects';
+import { LanguageEffects } from './store/language/language.effects';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { SingularityEffect } from './store/singularity/singularity.effects';
     StoreRouterConnectingModule.forRoot({
       serializer: CustomSerializer,
     }),
-    EffectsModule.forRoot([DogEffects, SingularityEffect]),
+    EffectsModule.forRoot([DogEffects, SingularityEffect, LanguageEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -4,6 +4,18 @@
             [menuItems]="menuItems"
             [logo]="logo"
             >
+
+            <div class="filter__field field">
+                <label for="languages">
+                    Language
+                </label>
+                <select #selectedLang (change)="selectLanguage(selectedLang.value)">
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>Russian</option>
+                </select>
+            </div>
+            
         </app-header-menu>
     </header>
     <app-loading-spinner *ngIf="isLoading$ | async"></app-loading-spinner>
