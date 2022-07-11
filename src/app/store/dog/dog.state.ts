@@ -1,4 +1,3 @@
-//interfaces
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
@@ -10,7 +9,7 @@ export interface DogState {
     rating: RatingState,
     filterParams: FilterParamsState,
     filterSize: FilterSizeState,
-    sort: SortState,
+    sortParams: SortParamsState,
     filterSingularity: FilterSingularityState;
     pagination: PaginationState,
 };
@@ -21,7 +20,7 @@ export interface RatingState {
     dislike: number;
 };
 
-export interface SortState {
+export interface SortParamsState {
     sortKey: string;
 };
 
@@ -59,7 +58,7 @@ export const INITIAL_DOG_STATE: DogState = {
     filterSize: {
         parameterSize: '',
     },
-    sort: {
+    sortParams: {
         sortKey: '',
     },
     filterSingularity: {
@@ -76,3 +75,4 @@ export const INITIAL_DOG_STATE: DogState = {
 export default interface DefaultDogState {
     dogs: DogState,
 };
+// https://code.tutsplus.com/ru/tutorials/testing-components-in-angular-using-jasmine--cms-29165

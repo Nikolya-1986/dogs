@@ -2,6 +2,10 @@ import { Injectable } from "@angular/core";
 import { select, Store } from "@ngrx/store";
 
 import { DogState } from "./dog.state";
+import { CompetitionsDTO } from "../../interfaces/competitions.interface";
+import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
+import { DescriptionDTO } from "../../interfaces/description.interface";
+import { DogDTO } from "../../interfaces/dog.interface";
 import * as dogSelector from "./dog.selector";
 import * as dogActions from "./dog.actions";
 
@@ -11,7 +15,7 @@ import * as dogActions from "./dog.actions";
 })
 export class DogStoreFacade {
     
-    public readonly dogs$ = this._dogStore.pipe(select(dogSelector.getDogs));
+    public readonly dogs$ = this._dogStore.pipe(select(dogSelector.getDogsFilter));
     public readonly pagination$ = this._dogStore.pipe(select(dogSelector.getPagination));
 
     constructor(
@@ -23,7 +27,7 @@ export class DogStoreFacade {
     };
 
     public loadDogsByFilter(query: string): void {
-        this._dogStore.dispatch(dogActions.setByFilterParams( { filters: { filterBy: ['breed', 'country', 'singularity'], filterQuery: query }}));
+        this._dogStore.dispatch(dogActions.setByFilterParams( { filterParams: { filterBy: ['breed', 'country'], filterQuery: query }}));
     };
 
     public loadDogsByFilterSize(size: string): void {
@@ -31,7 +35,7 @@ export class DogStoreFacade {
     };
 
     public loadDogsSortKey(sortKey: string): void {
-        this._dogStore.dispatch(dogActions.setSortKey({ sort: { sortKey } }));
+        this._dogStore.dispatch(dogActions.setSortKey({ sortParams: { sortKey } }));
     };
 
     public loadDogsByFilterSingularity(singularity: string): void {
@@ -42,12 +46,12 @@ export class DogStoreFacade {
         this._dogStore.dispatch(dogActions.setPaginationPage( { pagination }));
     };
 
-    public loadIncreaseRating(id : string): void {
-        this._dogStore.dispatch(dogActions.increaseDogRating({ id }));
+    public increaseDogRating(dog : DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void {
+        this._dogStore.dispatch(dogActions.increaseDogRatingRequest({ dog }));
     };
 
-    public loadDislikeRaiting(id: string): void {
-        this._dogStore.dispatch(dogActions.decreaseDogRating({ id }));
+    public decreaseDogRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void {
+        this._dogStore.dispatch(dogActions.decreaseDogRatingRequest({ dog }));
     };
 
     public resetDogsFilter(): void {

@@ -45,13 +45,13 @@
   </div>
   <div class="card__footer">
     <div class="card__raiting">
-      <a (click)="onIncreaseRating(dog.id)">
+      <a (click)="onIncreaseRating(dog)">
         <img [src]="like">
         <span>
           {{ dog.rating.like }}
         </span> 
       </a>
-      <a (click)="onDecreaseRating(dog.id)">
+      <a (click)="onDecreaseRating(dog)">
         <img [src]="dislike">
         <span>
           {{ dog.rating.dislike }}

@@ -15,6 +15,7 @@ export class DogsFilterComponent implements OnInit {
   @Input() public sortKeyForDogs = new FormControl;
   @Input() public sortParaments!: string[];
   @Input() public singularities!: Array<string>;
+  @Input() public filterSingularity = new FormControl;
   @Input() public activeSingularity!: string;
   @Output() public currentSingularity = new EventEmitter<string>();
 

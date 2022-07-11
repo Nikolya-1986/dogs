@@ -21,8 +21,8 @@ export class DogsCardComponent implements OnInit {
   @Input() public scale: string = "rest";  
   @Input() public like!: string;
   @Input() public dislike!: string;
-  @Output() public increaseRating = new EventEmitter<string>();
-  @Output() public decreaseRating = new EventEmitter<string>();
+  @Output() public increaseRating = new EventEmitter<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>>();
+  @Output() public decreaseRating = new EventEmitter<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>>();
 
   constructor() { }
 
@@ -38,12 +38,12 @@ export class DogsCardComponent implements OnInit {
     this.scale = state;  
   }; 
 
-  public onIncreaseRating(id: string): void {
-    this.increaseRating.emit(id)
+  public onIncreaseRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void {
+    this.increaseRating.emit(dog)
   };
 
-  public onDecreaseRating(id: string): void {
-    this.decreaseRating.emit(id)
+  public onDecreaseRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void {
+    this.decreaseRating.emit(dog)
   }
 
 }

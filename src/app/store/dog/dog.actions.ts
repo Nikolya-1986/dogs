@@ -1,11 +1,16 @@
-// @ngrx
 import { createAction, props, union } from "@ngrx/store";
-// interfaces
+
 import { CompetitionsDTO } from "../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO, Rating } from "../../interfaces/dog.interface";
-import { FilterParamsState, FilterSingularityState, FilterSizeState, PaginationState, SortState } from "./dog.state";
+import { 
+    FilterParamsState, 
+    FilterSingularityState, 
+    FilterSizeState, 
+    PaginationState, 
+    SortParamsState 
+} from "./dog.state";
 
 
 export enum DogActionsType {
@@ -19,9 +24,10 @@ export enum DogActionsType {
     SET_PAGINATION_PAGE = '[Dog] Set pagination pade',
     RESET_DOGS_STORE = '[Dog] Reset dogs store',
 
-    INCREASE_DOG_RATING = '[Dog] Increase dog rating',
-    DECREASE_DOG_RATING = '[Dog] Decrease dog rating',
-    UPDATE_DOG_RATING = '[Dog] Update dog raring',
+    INCREASE_DOG_RATING_REQUEST = '[Dog] Increase dog rating request',
+    INCREASE_DOG_RATING_SUCCESS = '[Dog] Increase dog rating success',
+    DECREASE_DOG_RATING_REQUEST = '[Dog] Decrease dog rating request',
+    DECREASE_DOG_RATING_SUCCESS = '[Dog] Decrease dog rating success',
 };
 
 export const loadDogsRequest = createAction(
@@ -35,7 +41,7 @@ export const loadDogsSuccess = createAction(
 
 export const setByFilterParams = createAction(
     DogActionsType.SET_FILTER_BY_PARAMS,
-    props<{ filters: FilterParamsState }>(),
+    props<{ filterParams: FilterParamsState }>(),
 );
 
 export const setByFilterSize = createAction(
@@ -45,7 +51,7 @@ export const setByFilterSize = createAction(
 
 export const setSortKey = createAction(
     DogActionsType.SET_SORT_KEY,
-    props<{ sort: SortState }>(),
+    props<{ sortParams: SortParamsState }>(),
 );
 
 export const setFilterSingularity = createAction(
@@ -62,20 +68,26 @@ export const resetDogsStore = createAction (
     DogActionsType.RESET_DOGS_STORE,
 );
 
-export const increaseDogRating = createAction(
-    DogActionsType.INCREASE_DOG_RATING,
-    props<{ id: string }>(),
+export const increaseDogRatingRequest = createAction(
+    DogActionsType.INCREASE_DOG_RATING_REQUEST,
+    props<{ dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> }>(),
 );
 
-export const decreaseDogRating = createAction(
-    DogActionsType.DECREASE_DOG_RATING,
-    props<{ id: string }>(),
+export const increaseDogRatingSuccess = createAction(
+    DogActionsType.INCREASE_DOG_RATING_SUCCESS,
+    props<{ dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> }>(),
 );
 
-export const updateDogRaring = createAction(
-    DogActionsType.UPDATE_DOG_RATING,
-    props<{ rating: Rating }>(),
+export const decreaseDogRatingRequest = createAction(
+    DogActionsType.DECREASE_DOG_RATING_REQUEST,
+    props<{ dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> }>(),
+)
+
+export const decreaseDogRatingSuccess = createAction(
+    DogActionsType.DECREASE_DOG_RATING_SUCCESS,
+    props<{ dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO> }>(),
 );
+
 
 const allDogAction = union({
     loadDogsRequest,
@@ -87,9 +99,10 @@ const allDogAction = union({
     setPaginationPage,
     resetDogsStore,
 
-    increaseDogRating,
-    decreaseDogRating,
-    updateDogRaring,
+    increaseDogRatingRequest,
+    increaseDogRatingSuccess,
+    decreaseDogRatingRequest,
+    decreaseDogRatingSuccess,
 });
 
 export type DogAction = typeof allDogAction;

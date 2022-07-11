@@ -23,8 +23,9 @@ export class DogService {
         return this._httpClient.get<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>[]>(`${this.BASE_URL}/dogs`);
     };
 
-    public getLikeRating(id: string): Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>> {
-        return this._httpClient.put<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>>(`${this.BASE_URL}/dogs/${id}`, null);
+    public updateLikeRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): 
+        Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>> {
+        return this._httpClient.put<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>>(`${this.BASE_URL}/dogs/${dog.id}`, JSON.stringify(dog));
     };
 
     public getDislikeRating(id: string): Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>> {

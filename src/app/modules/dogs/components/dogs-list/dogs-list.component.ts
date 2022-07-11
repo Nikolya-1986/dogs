@@ -1,16 +1,14 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
-// RxJs
 import { combineLatest, Observable, startWith, Subject, takeUntil } from 'rxjs';
-// NgRx
-import { DogStoreFacade } from '../../../../store/dog/dog.facade';
-// interfaces
+
 import { CompetitionsDTO } from "../../../../interfaces/competitions.interface";
 import { BreedGroupDTO } from "../../../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../../../interfaces/description.interface";
 import { DogDTO } from "../../../../interfaces/dog.interface";
 import { Body } from "../../../../interfaces/enums/body.enum";
-import { SingularityStoreFacade } from 'src/app/store/singularity/singularity.facade';
+import { SingularityStoreFacade } from '../../../../store/singularity/singularity.facade';
+import { DogStoreFacade } from '../../../../store/dog/dog.facade';
 import * as dogsConstant from '../../dogs.constant';
 
 
@@ -22,12 +20,12 @@ import * as dogsConstant from '../../dogs.constant';
 export class DogsListComponent implements OnInit, OnDestroy {
 
   public dogs$!: Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[] | any>;
-  public singularities$!: Observable<string[] | any>;
   public searchQuery = new FormControl('');
   public filterSize = new FormControl(Body.All);
   public bodySize: Body[] = [Body.All, Body.Average, Body.Large, Body.Little];
   public sortKeyForDogs = new FormControl('Default');
   public sortParaments: string[] = JSON.parse(JSON.stringify(dogsConstant.SORT_PARAMETRS_DOGS));
+  public singularities$!: Observable<string[] | any>;
   public activeSingularity!: string;
   public pagination$!: any;
   public currentPage: number = 1;
@@ -74,12 +72,12 @@ export class DogsListComponent implements OnInit, OnDestroy {
     this._dogStoreFacade.loadDogsByFilterSingularity(this.activeSingularity);
   };
 
-  public onIncreaseRaiting(id: string): void { 
-    this._dogStoreFacade.loadIncreaseRating(id);
+  public onIncreaseRaiting(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void { 
+    this._dogStoreFacade.increaseDogRating(dog);
   };
  
-  public onDecreaseRating(id: string): void {
-    this._dogStoreFacade.loadDislikeRaiting(id);
+  public onDecreaseRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void {
+    this._dogStoreFacade.decreaseDogRating(dog);
   };
 
   private _fetchPaginatoinPage(): void {
@@ -98,7 +96,7 @@ export class DogsListComponent implements OnInit, OnDestroy {
     this.dogs$ = this._dogStoreFacade.dogs$;
     const searchQuery$ = this.searchQuery.valueChanges.pipe(startWith(''));
     const filterSize$ = this.filterSize.valueChanges.pipe(startWith('All'));
-    const sortKeyForDogs$ = this.sortKeyForDogs.valueChanges.pipe(startWith(''));
+    const sortKeyForDogs$ = this.sortKeyForDogs.valueChanges.pipe(startWith('Default'));
     combineLatest([searchQuery$, filterSize$, sortKeyForDogs$])
     .pipe(
       takeUntil(this._destroy$),

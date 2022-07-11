@@ -10,9 +10,15 @@
                     Language
                 </label>
                 <select #selectedLang (change)="selectLanguage(selectedLang.value)">
-                    <option>English</option>
-                    <option>Spanish</option>
-                    <option>Russian</option>
+                    <option value="en-English">
+                        English
+                    </option>
+                    <option value="es_Spanish">
+                        Spanish
+                    </option>
+                    <option value="ru-Russian">
+                        Russian
+                    </option>
                 </select>
             </div>
             
