@@ -38,9 +38,24 @@ export class DogEffects {
         .pipe(
             ofType(dogActions.DogActionsType.INCREASE_DOG_RATING_REQUEST),
             switchMap((action: any) => {
-                return this._facadeService.updateLikeRating(action.dog)
+                return this._facadeService.updateDogRating(action.dog)
                     .pipe(
                         map(() => dogActions.increaseDogRatingSuccess({ dog: action.dog })),
+                        catchError((error) => of(sharedActions.setErrorMessage(error))),
+                    )
+                }
+            )
+        ),
+        { useEffectsErrorHandler: false }
+    );
+
+    decreaseRating$: Observable<Action> = createEffect(() => this._actions$
+        .pipe(
+            ofType(dogActions.DogActionsType.DECREASE_DOG_RATING_REQUEST),
+            switchMap((action: any) => {
+                return this._facadeService.updateDogRating(action.dog)
+                    .pipe(
+                        map(() => dogActions.decreaseDogRatingSuccess({ dog: action.dog })),
                         catchError((error) => of(sharedActions.setErrorMessage(error))),
                     )
                 }

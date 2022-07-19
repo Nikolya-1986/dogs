@@ -15,6 +15,7 @@ export class SingularityEffect {
     loadSingularity$: Observable<Action> = createEffect(() => this._actions$
         .pipe(
             ofType(singularityActions.SingularityActionsType.LOAD_SINGULARITIES_REQUEST),
+
             switchMap(() => {
                 return this._facadeService.getSingularities().pipe(
                     map((singularities: string[]) => {

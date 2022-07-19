@@ -62,7 +62,7 @@ const _dogReduserInternal = createReducer(
         const currentDog = dog;
         let like = currentDog.rating.like + 1;
         let dislike = currentDog.rating.dislike;
-        console.log(`id: ${dog.id}, like: ${like}, dislike: ${dislike}`);
+        console.log(`id: ${currentDog.id}, like: ${like}, dislike: ${dislike}`);
         return Object.assign({}, state, {
             rating: {
                 title: '',
@@ -75,7 +75,7 @@ const _dogReduserInternal = createReducer(
         const currentDog = dog;
         let like = currentDog.rating.like;
         let dislike = currentDog.rating.dislike + 1;
-        console.log(`id: ${dog.id}, like: ${like}, dislike: ${dislike}`);
+        console.log(`id: ${currentDog.id}, like: ${like}, dislike: ${dislike}`);
         return Object.assign({}, state, {
             rating: {
                 title: '',

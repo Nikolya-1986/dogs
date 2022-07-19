@@ -49,8 +49,10 @@ export class FacadeService {
         )
     };
 
-    public updateLikeRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>> {
-        return this.dogService.updateLikeRating(dog).pipe(
+    public updateDogRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): 
+        Observable<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>> {
+
+        return this.dogService.updateDogRating(dog).pipe(
             catchError(this.errorService.errorsBackend.bind(this)),
         )
     };

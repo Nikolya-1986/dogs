@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient, HttpHandler, HttpHeaders } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 
@@ -23,13 +23,17 @@ export class DogService {
         return this._httpClient.get<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>[]>(`${this.BASE_URL}/dogs`);
     };
 
-    public updateLikeRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): 
+    public updateDogRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): 
         Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>> {
-        return this._httpClient.put<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>>(`${this.BASE_URL}/dogs/${dog.id}`, JSON.stringify(dog));
+            
+        return this._httpClient.put<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>>
+            (`${this.BASE_URL}/dogs/${dog.id}`, JSON.stringify(dog), this._httpHeader);
     };
 
-    public getDislikeRating(id: string): Observable<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>> {
-        return this._httpClient.put<DogDTO<CompetitionsDTO, BreedGroupDTO, DescriptionDTO>>(`${this.BASE_URL}/dogs/${id}/dislike`, null);
-    };
+    private _httpHeader = {
+        headers: new HttpHeaders({
+            'Content-Type': 'application/json',
+        })
+    }
 
 }
