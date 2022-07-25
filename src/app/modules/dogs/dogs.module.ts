@@ -11,6 +11,7 @@ import { DogsCardComponent } from './components/dogs-card/dogs-card.component';
 import { DogsFilterComponent } from './components/dogs-filter/dogs-filter.component';
 import { DogsPaginationComponent } from './components/dogs-pagination/dogs-pagination.component';
 import { SingularityComponent } from './components/dogs-filter/components/singularity/singularity.component';
+import { ApplicationDirectivesModule } from 'src/app/directives/application-directives.module';
 
 
 @NgModule({
@@ -22,7 +23,6 @@ import { SingularityComponent } from './components/dogs-filter/components/singul
     DogsFilterComponent,
     DogsPaginationComponent,
     SingularityComponent,
-
   ],
   imports: [
     CommonModule,
@@ -30,6 +30,7 @@ import { SingularityComponent } from './components/dogs-filter/components/singul
     ReactiveFormsModule,
     DogsRoutingModule,
     NgxPaginationModule,
+    ApplicationDirectivesModule,
   ]
 })
 export class DogsModule { }

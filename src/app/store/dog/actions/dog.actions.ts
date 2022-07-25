@@ -1,16 +1,16 @@
 import { createAction, props, union } from "@ngrx/store";
 
-import { CompetitionsDTO } from "../../interfaces/competitions.interface";
-import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
-import { DescriptionDTO } from "../../interfaces/description.interface";
-import { DogDTO, Rating } from "../../interfaces/dog.interface";
+import { CompetitionsDTO } from "../../../interfaces/competitions.interface";
+import { BreedGroupDTO } from "../../../interfaces/breed-group.iterface";
+import { DescriptionDTO } from "../../../interfaces/description.interface";
+import { DogDTO, Rating } from "../../../interfaces/dog.interface";
 import { 
     FilterParamsState, 
     FilterSingularityState, 
     FilterSizeState, 
     PaginationState, 
     SortParamsState 
-} from "./dog.state";
+} from "../dog.state";
 
 
 export enum DogActionsType {

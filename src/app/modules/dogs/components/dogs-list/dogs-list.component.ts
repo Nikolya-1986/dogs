@@ -10,6 +10,7 @@ import { Body } from "../../../../interfaces/enums/body.enum";
 import { SingularityStoreFacade } from '../../../../store/singularity/singularity.facade';
 import { DogStoreFacade } from '../../../../store/dog/dog.facade';
 import * as dogsConstant from '../../dogs.constant';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -38,6 +39,7 @@ export class DogsListComponent implements OnInit, OnDestroy {
   private _destroy$: Subject<boolean> = new Subject();
 
   constructor(
+    private _router: Router,
     private _dogStoreFacade: DogStoreFacade,
     private _singularityStoreFacade: SingularityStoreFacade,
   ) { }
@@ -79,6 +81,11 @@ export class DogsListComponent implements OnInit, OnDestroy {
   public onDecreaseRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void {
     this._dogStoreFacade.decreaseDogRating(dog);
   };
+
+  public onDogDetail(id: string): void {
+    // this._router.navigate([]);
+    console.log('detail')
+  }
 
   private _fetchPaginatoinPage(): void {
     const pagination = {

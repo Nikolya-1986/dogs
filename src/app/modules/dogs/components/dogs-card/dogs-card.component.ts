@@ -23,6 +23,7 @@ export class DogsCardComponent implements OnInit {
   @Input() public dislike!: string;
   @Output() public increaseRating = new EventEmitter<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>>();
   @Output() public decreaseRating = new EventEmitter<DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>>();
+  @Output() public dogDetail = new EventEmitter<string>()
 
   constructor() { }
 
@@ -44,6 +45,10 @@ export class DogsCardComponent implements OnInit {
 
   public onDecreaseRating(dog: DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>): void {
     this.decreaseRating.emit(dog)
+  }
+
+  public goToDogDetail(id: string): void {
+    this.dogDetail.emit(id);
   }
 
 }

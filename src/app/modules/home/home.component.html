@@ -5,7 +5,7 @@
             [logo]="logo"
             >
 
-            <div class="filter__field field">
+            <div class="filter__field field" toolTipDirective>
                 <label for="languages">
                     Language
                 </label>
@@ -19,6 +19,11 @@
                     <option value="ru-Russian">
                         Russian
                     </option>
+                    <ng-template #toolTipTemplate>      
+                        <div class="tooltip">   
+                            Translate {{ selectedLang.value }}
+                        </div>      
+                    </ng-template> 
                 </select>
             </div>
             

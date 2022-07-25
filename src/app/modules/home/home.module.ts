@@ -12,6 +12,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 import { HttpClient } from '@angular/common/http';
+import { ApplicationDirectivesModule } from 'src/app/directives/application-directives.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { HttpClient } from '@angular/common/http';
         deps: [HttpClient]
       }
     }),
+    ApplicationDirectivesModule,
   ],
   declarations: [
     HomeComponent, 

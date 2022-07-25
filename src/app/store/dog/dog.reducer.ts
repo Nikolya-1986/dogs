@@ -1,7 +1,7 @@
 import { Action, createReducer, on } from "@ngrx/store";
 
 import { DogState, INITIAL_DOG_STATE } from "./dog.state";
-import * as dogActions from "./dog.actions";
+import * as dogActions from "../dog/actions/dog.actions";
 
 
 const _dogReduserInternal = createReducer(
@@ -57,30 +57,25 @@ const _dogReduserInternal = createReducer(
         ...state,
         ...INITIAL_DOG_STATE,
     })),
-
-    on(dogActions.increaseDogRatingSuccess, (state, { dog }) => {
-        const currentDog = dog;
-        let like = currentDog.rating.like + 1;
-        let dislike = currentDog.rating.dislike;
-        console.log(`id: ${currentDog.id}, like: ${like}, dislike: ${dislike}`);
+    on(dogActions.increaseDogRatingSuccess, (state, action) => {
+        let like = action.dog.rating.like;
+        console.log(`id: ${action.dog.id}, like: ${++like}, dislike: ${action.dog.rating.dislike}`);
         return Object.assign({}, state, {
-            rating: {
-                title: '',
-                like: like,
-                dislike: dislike,
+            [action.dog.id]: {
+                rating: {
+                    title: '',
+                    like: ++like,
+                }
             }
         })
     }),
-    on(dogActions.decreaseDogRatingSuccess, (state, { dog }) => {
-        const currentDog = dog;
-        let like = currentDog.rating.like;
-        let dislike = currentDog.rating.dislike + 1;
-        console.log(`id: ${currentDog.id}, like: ${like}, dislike: ${dislike}`);
+    on(dogActions.decreaseDogRatingSuccess, (state, action) => {
+        let dislike = action.dog.rating.dislike;
+        console.log(`id: ${action.dog.id}, like: ${action.dog.rating.like}, dislike: ${++dislike}`);
         return Object.assign({}, state, {
             rating: {
                 title: '',
-                like: like,
-                dislike: dislike,
+                dislike: ++dislike,
             }
         })
     }),

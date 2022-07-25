@@ -38,7 +38,7 @@ export const getDogsFilter = createSelector(
     getSortParams,
     getFilterSingularity,
     (loadedDogs, filterParams, filterSize, sortParams, filterSingularity): DogDTO<DescriptionDTO, CompetitionsDTO, BreedGroupDTO>[] | any => {
-        let dogs = [...loadedDogs];
+        let dogs = loadedDogs;
         let filterQuery = filterParams.filterQuery;
         let filterBy = filterParams.filterBy;
         let parameterSize = filterSize.parameterSize;

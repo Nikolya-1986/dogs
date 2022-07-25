@@ -7,7 +7,7 @@ import { BreedGroupDTO } from "../../interfaces/breed-group.iterface";
 import { DescriptionDTO } from "../../interfaces/description.interface";
 import { DogDTO } from "../../interfaces/dog.interface";
 import * as dogSelector from "./dog.selector";
-import * as dogActions from "./dog.actions";
+import * as dogActions from "../dog/actions/dog.actions";
 
 
 @Injectable({ 

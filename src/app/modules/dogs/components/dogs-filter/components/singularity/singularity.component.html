@@ -1,6 +1,12 @@
-<button
+<button 
     [class.active-button]="isActive"
     (click)="selectSingularity()"
+    toolTipDirective
     >
     {{ singularity }}
+    <ng-template #toolTipTemplate>      
+        <div class="tooltip">   
+            Show {{ singularity }}
+        </div>      
+    </ng-template> 
 </button>

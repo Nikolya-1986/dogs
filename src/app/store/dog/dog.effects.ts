@@ -7,7 +7,7 @@ import { FacadeService } from "../../services/facades/facade.service";
 import { SharedStoreFacade } from "../shared/shared.facade";
 import { DogState } from "./dog.state";
 import * as sharedActions from '../shared/shared.actions';
-import * as dogActions from './dog.actions';
+import * as dogActions from '../dog/actions/dog.actions';
 
 
 @Injectable()
@@ -40,7 +40,7 @@ export class DogEffects {
             switchMap((action: any) => {
                 return this._facadeService.updateDogRating(action.dog)
                     .pipe(
-                        map(() => dogActions.increaseDogRatingSuccess({ dog: action.dog })),
+                        map((dog) => dogActions.increaseDogRatingSuccess({ dog })),
                         catchError((error) => of(sharedActions.setErrorMessage(error))),
                     )
                 }
@@ -55,7 +55,7 @@ export class DogEffects {
             switchMap((action: any) => {
                 return this._facadeService.updateDogRating(action.dog)
                     .pipe(
-                        map(() => dogActions.decreaseDogRatingSuccess({ dog: action.dog })),
+                        map((dog) => dogActions.decreaseDogRatingSuccess({ dog })),
                         catchError((error) => of(sharedActions.setErrorMessage(error))),
                     )
                 }
