@@ -16,22 +16,18 @@ export class MenuService {
       name: 'Create',
       path: '/create-dog',
     },
-    {
-      name: 'Edit',
-      path: '/edit-dog',
-    },
-    {
-      name: 'Competitions',
-      path: '/competitions',
-    },
-    {
-      name: 'Group MKF',
-      path: '/breed-group',
-    },
-    {
-      name: 'Game',
-      path: '/game'
-    },
+    // {
+    //   name: 'Competitions',
+    //   path: '/competitions',
+    // },
+    // {
+    //   name: 'Group MKF',
+    //   path: '/breed-group',
+    // },
+    // {
+    //   name: 'Game',
+    //   path: '/game'
+    // },
     {
       name: 'SingUp',
       path: '/auth/signup',

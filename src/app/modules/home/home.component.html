@@ -4,10 +4,44 @@
             [menuItems]="menuItems"
             [logo]="logo"
             >
+
+            <div class="filter__field field" toolTipDirective>
+                <label for="languages">
+                    Language
+                </label>
+                <select #selectedLang (change)="selectLanguage(selectedLang.value)">
+                    <option value="en-English">
+                        English
+                    </option>
+                    <option value="es_Spanish">
+                        Spanish
+                    </option>
+                    <option value="ru-Russian">
+                        Russian
+                    </option>
+                    <ng-template #toolTipTemplate>      
+                        <div class="tooltip">   
+                            Translate {{ selectedLang.value }}
+                        </div>      
+                    </ng-template> 
+                </select>
+            </div>
+            
         </app-header-menu>
     </header>
+    <app-loading-spinner *ngIf="isLoading$ | async"></app-loading-spinner>
     <main class="content">
-        <router-outlet></router-outlet> 
+        <ng-container *ngIf="errorMessage$ | async as message">
+            <p style="color: red; text-align:center; text-transform: uppercase;">
+                Error from backend: {{ message }}
+            </p>
+        </ng-container>
+        <ng-container>
+            <div [@outerRouteAnimation]="outlet.isActivated ? outlet.activatedRoute : ''">
+                <router-outlet #outlet="outlet"></router-outlet>
+            </div>
+        </ng-container>
+        
     </main>
     <footer class="content">
         <app-footer></app-footer>

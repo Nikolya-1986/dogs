@@ -1,0 +1,26 @@
+<section class="pagination__container pagination">
+    <div>
+        <label class="m-0" for="exampleFormControlSelect2">
+            Show dogs by
+        </label>
+        <select 
+            class="form-control m-0" 
+            id="exampleFormControlSelect2"
+            (change)="handlePageSizeChange($event)"
+            >
+            <option
+                *ngFor="let size of pageSizes"
+                [ngValue]="size"
+                >
+                {{ size }}
+            </option>
+        </select>
+    </div>
+    <pagination-controls
+        [responsive]="true" 
+        previousLabel="Back"
+        nextLabel="Next"
+        (pageChange)="handlePageChange($event)"
+        >
+    </pagination-controls>
+</section>

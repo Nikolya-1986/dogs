@@ -1,0 +1,17 @@
+.dogs {
+    display: flex;
+    flex-direction: column;
+
+    &__card {
+        display: flex;
+        justify-content: start;
+        flex-flow: row wrap;
+    }
+
+    &__pagination  {
+        display: flex;
+        justify-content: end;
+        flex-flow: row wrap;
+    }
+
+}

@@ -1,1 +1,50 @@
-<p>dogs-list works!</p>
+<article class="dogs dogs__list">
+
+    <section class="dogs__filter">
+        <app-dogs-filter
+            [searchQuery]="searchQuery"
+            [filterSize]="filterSize"
+            [sortParaments]="sortParaments"
+            [singularities]="singularities$ | async"
+            [activeSingularity]="activeSingularity"
+            [sortKeyForDogs]="sortKeyForDogs"
+            [bodySize]="bodySize"
+            (currentSingularity)="onCurrentSingularity($event)"
+            >
+        </app-dogs-filter>
+    </section>
+
+    <section class="dogs__pagination">
+        <app-dogs-pagination
+            [pageSizes]="pageSizes"
+            [itemsPerPage]="itemsPerPage"
+            [currentPage]="currentPage"
+            (currentCountPageSize)="onCurrentCountPageSize($event)"
+            (currentPageChange)="onCurrentPageChange($event)"
+            >
+        </app-dogs-pagination>
+    </section>
+
+    <section class="dogs__card">
+        <ng-container *ngFor="let dog of dogs$ 
+            | async 
+            | paginate: {
+                itemsPerPage: itemsPerPage,
+                currentPage: currentPage,
+                totalItems: count
+            }
+            trackBy: trackByFn"
+            >
+            <app-dogs-card
+                [dog]="dog"
+                [like]="like"
+                [dislike]="dislike"
+                (increaseRating)="onIncreaseRaiting($event)"
+                (decreaseRating)="onDecreaseRating($event)"
+                (dogDetail)="onDogDetail($event)"
+                >
+            </app-dogs-card>
+        </ng-container>
+    </section>
+
+</article>

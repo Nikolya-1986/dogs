@@ -1,10 +1,14 @@
+@import '../node_modules/font-awesome/css/font-awesome.css';
 /* You can add global styles to this file, and also import other style files */
 :root {
     --light-color-1: #ffffff;
+    --light-color-2: #cecece;
+    --light-color-3: #F6F6f6;
     --primary-color-1: #ff0000;
     --primary-color-2: rgba(241, 219, 20, 0.842);
+    --primary-color-3: blue;
     --dark-color-1: #000000;
-    --transparent-color: rgba(2, 2, 2, 0.582);
+    --transparent-color: rgba(0, 0, 0, 0.5);
 }
 
 html, body  {
@@ -73,6 +77,24 @@ a {
     color: var(--dark-color-1);
 }
 
+input, select {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+input[type=search] {
+	border: 2px solid var(--light-color-2);
+	background: var(--light-color-3);
+	border-radius: 6px;
+
+    &:hover {
+        border: 2px solid var(--primary-color-3);
+    }
+}
+
 .active {
     color: var(--primary-color-1);
 }
@@ -83,4 +105,22 @@ a {
 
 .content {
     padding: .2rem 1.6rem;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+[tooltipDirective] {
+    position: relative;
+}
+  
+.tooltip {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 10px;
+    background: var(--light-color-1);
+    box-shadow: 0 2px 1px rgba(0,0,0,.6);
 }

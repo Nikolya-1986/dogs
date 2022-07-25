@@ -1,0 +1,67 @@
+<section class="filter__container filter">
+    <div class="filter__field field">
+        <label for="searchParametrs">
+            Search the breed or country of origin of a dog
+        </label>
+        <input
+            id="searchParametrs"
+            type="search"
+            placeholder="Enter breed or country dog..."
+            [formControl]="searchQuery"
+            aria-describedby="filter"
+        />
+    </div>
+    <div class="filter__field field">
+        <label for="filterSize" >
+            Filter by size
+        </label>
+        <div class="filter__size">
+            <ng-container *ngFor="let item of bodySize">
+                <span>
+                    <input 
+                        type="radio" 
+                        [value]="item"
+                        id="filterSize"
+                        [formControl]="filterSize"
+                    />
+                    {{ item }}
+                </span>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="filter__field field">
+        <label for="sortParametrs">
+            Sorting by
+        </label>
+        <select  
+            [formControl]="sortKeyForDogs" 
+            name="item"
+            >
+            <option
+                *ngFor="let parametr of sortParaments"
+                [value]="parametr"
+                >
+                {{ parametr }}
+            </option>
+        </select>
+    </div>
+
+    <div class="filter__field field">
+        <label for="filterSingularity">
+            Filter by singularity
+        </label>
+        <div class="filter__singularity">
+            <ng-container *ngFor="let singularity of singularities">
+                <span>
+                    <app-singularity
+                        [singularity]="singularity"
+                        [activeSingularity]="activeSingularity"
+                        (currentSingularity)="onCurrentSingularity($event)"
+                        >
+                    </app-singularity>
+                </span>
+            </ng-container>
+        </div>
+    </div>
+</section>

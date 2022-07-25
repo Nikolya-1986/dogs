@@ -1,0 +1,76 @@
+<section 
+  class="card card__container"
+  (click)="goToDogDetail(dog.id)">
+  <div class="card__header-wrapper">
+    <div 
+      class="card__header" 
+      (click)="rotateImage()"
+      stopPropagationDirective
+      (mouseenter)="scaleImage('hover')"   
+      (mouseleave)="scaleImage('rest')"
+      [@scaleImageState]="scale"
+      >
+      <img 
+        [@rotatedImageState]='rotated' 
+        [src]="dog.images[0]" 
+        class="card__image" 
+      />
+    </div>
+  </div>
+  
+  <div 
+    class="card__body"
+    toolTipDirective
+    >
+    <h3>
+      Dog breeds: {{ dog.breed }}
+    </h3>
+    <ul appHoverImageStyle>
+      <li>
+        Origin: {{ dog.country }}
+      </li>
+      <li>
+        Singularity: {{ dog.singularity }}
+      </li>
+      <li>
+        Life long: {{ dog.age }}
+      </li>
+      <li>
+        Size: {{ dog.size.body }}
+      </li>
+      <li>
+        Height: {{ dog.size.height }} centimeters at the withers
+      </li>
+      <li>
+        Weight: {{ dog.size.weight }} kilogram
+      </li>
+      <li>
+        Rating: {{ dog.rating.title }}
+      </li>
+    </ul>
+    <ng-template #toolTipTemplate>      
+      <div class="tooltip">   
+          Show detail about {{ dog.breed }}
+      </div>      
+  </ng-template> 
+  </div>
+  <div class="card__footer">
+    <div 
+      class="card__raiting" 
+      stopPropagationDirective
+      >
+      <a (click)="onIncreaseRating(dog)">
+        <img [src]="like">
+        <span>
+          {{ dog.rating.like }}
+        </span> 
+      </a>
+      <a (click)="onDecreaseRating(dog)">
+        <img [src]="dislike">
+        <span>
+          {{ dog.rating.dislike }}
+        </span> 
+      </a>
+    </div>
+  </div>
+</section>

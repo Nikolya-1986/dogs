@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -8,14 +8,20 @@ import { AppComponent } from './app.component';
 
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
-import { reducers, metaReducers } from './reducers';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
 import { HomeModule } from './modules/home/home.module';
+import { appReducer } from './store/app.state';
+import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import { CustomSerializer } from './store/router/custom-serializer';
+import { DogEffects } from './store/dog/dog.effects';
+import { SingularityEffect } from './store/singularity/singularity.effects';
+import { LanguageEffects } from './store/language/language.effects';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,11 +29,12 @@ import { HomeModule } from './modules/home/home.module';
     AppRoutingModule,
     HttpClientModule,
     HomeModule,
-    StoreModule.forRoot(reducers, {
-      metaReducers
-    }),
+    StoreModule.forRoot(appReducer),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production }),
-    EffectsModule.forRoot([]),
+    StoreRouterConnectingModule.forRoot({
+      serializer: CustomSerializer,
+    }),
+    EffectsModule.forRoot([DogEffects, SingularityEffect, LanguageEffects]),
   ],
   providers: [],
   bootstrap: [AppComponent],

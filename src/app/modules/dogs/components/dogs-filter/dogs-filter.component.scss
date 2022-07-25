@@ -1,0 +1,22 @@
+.filter {
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__size {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__singularity {
+        display: flex;
+        padding-top: .5rem;
+    }
+
+    span {
+        margin-right: 1rem;
+    }
+}
